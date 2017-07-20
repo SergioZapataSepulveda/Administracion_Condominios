@@ -1,0 +1,1451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="ADMINISTRACION_CONTABLE" EntityType="Model.Store.ADMINISTRACION_CONTABLE" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="ANUNCIO_COMUNIDAD" EntityType="Model.Store.ANUNCIO_COMUNIDAD" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="COMUNA" EntityType="Model.Store.COMUNA" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="CONDOMINIO" EntityType="Model.Store.CONDOMINIO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="CUOTA_GASTO_RESIDENTES" EntityType="Model.Store.CUOTA_GASTO_RESIDENTES" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="DETALLE_RESERVA" EntityType="Model.Store.DETALLE_RESERVA" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="EVENTO_LIBRO" EntityType="Model.Store.EVENTO_LIBRO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="FUNCIONARIO" EntityType="Model.Store.FUNCIONARIO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="MULTA" EntityType="Model.Store.MULTA" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="PAGO_OFFLINE" EntityType="Model.Store.PAGO_OFFLINE" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="REPORTES" EntityType="Model.Store.REPORTES" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="RESERVA" EntityType="Model.Store.RESERVA" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="RESIDENTE" EntityType="Model.Store.RESIDENTE" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="SERVICIO" EntityType="Model.Store.SERVICIO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="TARJETA_CREDITO" EntityType="Model.Store.TARJETA_CREDITO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="TIPO_FUNCIONARIO" EntityType="Model.Store.TIPO_FUNCIONARIO" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="TIPO_RESIDENTE" EntityType="Model.Store.TIPO_RESIDENTE" store:Type="Tables" Schema="CASO14" />
+          <EntitySet Name="VIVIENDA" EntityType="Model.Store.VIVIENDA" store:Type="Tables" Schema="CASO14" />
+          <AssociationSet Name="ADMINISTRACION_CONDOMINIO_FK" Association="Model.Store.ADMINISTRACION_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="ADMINISTRACION_CONTABLE" EntitySet="ADMINISTRACION_CONTABLE" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_COMUNA_FK" Association="Model.Store.CONDOMINIO_COMUNA_FK">
+            <End Role="COMUNA" EntitySet="COMUNA" />
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_ID_CONDOMINIO_FK" Association="Model.Store.CONDOMINIO_ID_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="ANUNCIO_COMUNIDAD" EntitySet="ANUNCIO_COMUNIDAD" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_ID_FK" Association="Model.Store.CONDOMINIO_ID_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="REPORTES" EntitySet="REPORTES" />
+          </AssociationSet>
+          <AssociationSet Name="DETALLE_RESERVA_RESERVA_FK" Association="Model.Store.DETALLE_RESERVA_RESERVA_FK">
+            <End Role="RESERVA" EntitySet="RESERVA" />
+            <End Role="DETALLE_RESERVA" EntitySet="DETALLE_RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="DETALLE_RESERVA_SERVICIO_FK" Association="Model.Store.DETALLE_RESERVA_SERVICIO_FK">
+            <End Role="SERVICIO" EntitySet="SERVICIO" />
+            <End Role="DETALLE_RESERVA" EntitySet="DETALLE_RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="FUNCIONARIO_CONDOMINIO_FK" Association="Model.Store.FUNCIONARIO_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+          </AssociationSet>
+          <AssociationSet Name="MULTA_RUT_ID_FK" Association="Model.Store.MULTA_RUT_ID_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="MULTA" EntitySet="MULTA" />
+          </AssociationSet>
+          <AssociationSet Name="RESERVA_FUNCIONARIO_FK" Association="Model.Store.RESERVA_FUNCIONARIO_FK">
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+            <End Role="RESERVA" EntitySet="RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="RESERVA_RESIDENTE_FK" Association="Model.Store.RESERVA_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="RESERVA" EntitySet="RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="RESIDENTE_RUT_ID_FK" Association="Model.Store.RESIDENTE_RUT_ID_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="CUOTA_GASTO_RESIDENTES" EntitySet="CUOTA_GASTO_RESIDENTES" />
+          </AssociationSet>
+          <AssociationSet Name="RESIDENTE_TIPO_RESIDENTE_FK" Association="Model.Store.RESIDENTE_TIPO_RESIDENTE_FK">
+            <End Role="TIPO_RESIDENTE" EntitySet="TIPO_RESIDENTE" />
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+          </AssociationSet>
+          <AssociationSet Name="RUT_FUNCIONARIO_FK" Association="Model.Store.RUT_FUNCIONARIO_FK">
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+            <End Role="EVENTO_LIBRO" EntitySet="EVENTO_LIBRO" />
+          </AssociationSet>
+          <AssociationSet Name="RUT_RESIDENTE_FK" Association="Model.Store.RUT_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="PAGO_OFFLINE" EntitySet="PAGO_OFFLINE" />
+          </AssociationSet>
+          <AssociationSet Name="TIPO_FUNCIONARIO_FK" Association="Model.Store.TIPO_FUNCIONARIO_FK">
+            <End Role="TIPO_FUNCIONARIO" EntitySet="TIPO_FUNCIONARIO" />
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+          </AssociationSet>
+          <AssociationSet Name="VIVIENDA_CONDOMINIO_FK" Association="Model.Store.VIVIENDA_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+          </AssociationSet>
+          <AssociationSet Name="VIVIENDA_RESIDENTE_FK" Association="Model.Store.VIVIENDA_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADMINISTRACION_CONTABLE">
+          <Key>
+            <PropertyRef Name="ID_ADMISTRACION" />
+          </Key>
+          <Property Name="ID_ADMISTRACION" Type="number" Nullable="false" Precision="10" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="TIPO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="CATEGORIA" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPCION" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="MONTO" Type="number" Nullable="false" Precision="10" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+          <Property Name="OBSERVACIONES" Type="varchar2" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="ANUNCIO_COMUNIDAD">
+          <Key>
+            <PropertyRef Name="ID_ANUNCIO_COMUNIDAD" />
+          </Key>
+          <Property Name="ID_ANUNCIO_COMUNIDAD" Type="number" Nullable="false" Precision="15" />
+          <Property Name="TITULO" Type="varchar2" Nullable="false" MaxLength="150" />
+          <Property Name="DETALLE" Type="varchar2" Nullable="false" MaxLength="2000" />
+          <Property Name="FECHA" Type="date" Nullable="false" />
+          <Property Name="ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+        </EntityType>
+        <EntityType Name="COMUNA">
+          <Key>
+            <PropertyRef Name="ID_COMUNA" />
+          </Key>
+          <Property Name="ID_COMUNA" Type="varchar2" Nullable="false" MaxLength="5" />
+          <Property Name="NOMBRE_COMUNA" Type="varchar2" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CONDOMINIO">
+          <Key>
+            <PropertyRef Name="ID_CONDOMINIO" />
+          </Key>
+          <Property Name="ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+          <Property Name="NOMBRE_CONDOMINIO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="CUENTA_CORRIENTE_CONDOMINIO" Type="varchar2" Nullable="false" MaxLength="20" />
+          <Property Name="CANTIDAD_CASAS" Type="number" Nullable="false" Precision="5" />
+          <Property Name="COMUNA_ID_COMUNA" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CUOTA_GASTO_RESIDENTES">
+          <Key>
+            <PropertyRef Name="ID_CUOTA_GASTO_MENSUAL" />
+          </Key>
+          <Property Name="ID_CUOTA_GASTO_MENSUAL" Type="number" Nullable="false" Precision="10" />
+          <Property Name="FECHA_INICIO_PAGO" Type="date" />
+          <Property Name="FECHA_TERMINO_PAGO" Type="date" />
+          <Property Name="FECHA_PAGO_RESIDENTE" Type="date" />
+          <Property Name="MONTO" Type="number" Nullable="false" Precision="10" />
+          <Property Name="ESTADO" Type="varchar2" MaxLength="50" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="varchar2" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="DETALLE_RESERVA">
+          <Key>
+            <PropertyRef Name="ID_D_R" />
+            <PropertyRef Name="RESERVA_ID_RESERVA" />
+            <PropertyRef Name="SERVICIO_ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_D_R" Type="number" Nullable="false" Precision="10" />
+          <Property Name="ESTADO" Type="varchar2" Nullable="false" MaxLength="30" />
+          <Property Name="CAP_USADA_TRAMO_1" Type="number" Nullable="false" Precision="3" />
+          <Property Name="CAP_USADA_TRAMO_2" Type="number" Nullable="false" Precision="3" />
+          <Property Name="CAP_USADA_TRAMO_3" Type="number" Nullable="false" Precision="3" />
+          <Property Name="FECHA_ARESERVAR" Type="date" Nullable="false" />
+          <Property Name="COSTO_RESERVA" Type="number" Nullable="false" Precision="10" />
+          <Property Name="REPORTE" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="RESERVA_ID_RESERVA" Type="number" Nullable="false" Precision="15" />
+          <Property Name="SERVICIO_ID_SERVICIO" Type="number" Nullable="false" Precision="6" />
+        </EntityType>
+        <EntityType Name="EVENTO_LIBRO">
+          <Key>
+            <PropertyRef Name="ID_EVENTO_LIBRO" />
+          </Key>
+          <Property Name="ID_EVENTO_LIBRO" Type="number" Nullable="false" Precision="15" />
+          <Property Name="TITULO" Type="varchar2" Nullable="false" MaxLength="150" />
+          <Property Name="DESCRIPCION" Type="varchar2" Nullable="false" MaxLength="1500" />
+          <Property Name="FECHA" Type="date" Nullable="false" />
+          <Property Name="AREA_COMUN" Type="varchar2" MaxLength="150" />
+          <Property Name="RUT_INVOLUCRADO" Type="varchar2" MaxLength="150" />
+          <Property Name="RUT_FUNCIONARIO" Type="varchar2" Nullable="false" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="FUNCIONARIO">
+          <Key>
+            <PropertyRef Name="RUT_FUNCIONARIO" />
+          </Key>
+          <Property Name="RUT_FUNCIONARIO" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="PASS_FUNCIONARIO" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="NIVEL_ACCESO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_FUNCIONARIO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="TIPO_FUNCIONARIO_ID_T_F" Type="number" Precision="10" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+        </EntityType>
+        <EntityType Name="MULTA">
+          <Key>
+            <PropertyRef Name="ID_MULTA" />
+          </Key>
+          <Property Name="ID_MULTA" Type="number" Nullable="false" Precision="10" />
+          <Property Name="FECHA_CREACION_MULTA" Type="date" />
+          <Property Name="FECHA_PAGO_MULTA" Type="date" />
+          <Property Name="MONTO" Type="number" Nullable="false" Precision="10" />
+          <Property Name="DESCRIPCION" Type="varchar2" Nullable="false" MaxLength="1000" />
+          <Property Name="ESTADO" Type="varchar2" MaxLength="50" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="varchar2" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="PAGO_OFFLINE">
+          <Key>
+            <PropertyRef Name="ID_PAGO_OFFLINE" />
+          </Key>
+          <Property Name="ID_PAGO_OFFLINE" Type="number" Nullable="false" Precision="10" />
+          <Property Name="NOMBRE_ARCHIVO" Type="varchar2" MaxLength="100" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="TIPO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="RUT_RESIDENTE" Type="varchar2" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="REPORTES">
+          <Key>
+            <PropertyRef Name="ID_REPORTES" />
+          </Key>
+          <Property Name="ID_REPORTES" Type="number" Nullable="false" Precision="10" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="TIPO" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPCION" Type="varchar2" Nullable="false" MaxLength="500" />
+          <Property Name="RUT_REPORTADO" Type="varchar2" MaxLength="15" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+        </EntityType>
+        <EntityType Name="RESERVA">
+          <Key>
+            <PropertyRef Name="ID_RESERVA" />
+          </Key>
+          <Property Name="ID_RESERVA" Type="number" Nullable="false" Precision="15" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="varchar2" MaxLength="15" />
+          <Property Name="FUNCIONARIO_RUT_FUNCIONARIO" Type="varchar2" MaxLength="15" />
+          <Property Name="FECHA" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RESIDENTE">
+          <Key>
+            <PropertyRef Name="RUT_RESIDENTE" />
+          </Key>
+          <Property Name="RUT_RESIDENTE" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="PASS_RESIDENTE" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="NOMBRE_RESIDENTE" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="NIVEL_ACCESO" Type="number" Nullable="false" Precision="1" />
+          <Property Name="DIRECCION" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="CORREO" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="TIPO_RESIDENTE_ID_T_R" Type="number" Precision="2" />
+        </EntityType>
+        <EntityType Name="SERVICIO">
+          <Key>
+            <PropertyRef Name="ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_SERVICIO" Type="number" Nullable="false" Precision="6" />
+          <Property Name="NOMBRE_SERVICIO" Type="varchar2" Nullable="false" MaxLength="200" />
+          <Property Name="DESCRIPCION" Type="varchar2" Nullable="false" MaxLength="2000" />
+          <Property Name="VALOR_TRAMO" Type="number" Nullable="false" Precision="10" />
+          <Property Name="CANTIDAD_TOTAL" Type="number" Nullable="false" Precision="3" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+        </EntityType>
+        <EntityType Name="TARJETA_CREDITO">
+          <Key>
+            <PropertyRef Name="NUMERO_TARJETA" />
+          </Key>
+          <Property Name="NUMERO_TARJETA" Type="number" Nullable="false" Precision="16" />
+          <Property Name="COD_SEGURIDAD" Type="number" Nullable="false" Precision="3" />
+          <Property Name="FECHA_VENCIMIENTO" Type="varchar2" Nullable="false" MaxLength="5" />
+          <Property Name="RUT_PERSONA" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="PASS_PERSONA" Type="varchar2" Nullable="false" MaxLength="15" />
+          <Property Name="NOMBRE_PERSONA" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="SALDO" Type="number" Nullable="false" Precision="15" />
+        </EntityType>
+        <EntityType Name="TIPO_FUNCIONARIO">
+          <Key>
+            <PropertyRef Name="ID_T_F" />
+          </Key>
+          <Property Name="ID_T_F" Type="number" Nullable="false" Precision="10" />
+          <Property Name="NOMBRE_TIPO_FUNCIONARIO" Type="varchar2" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TIPO_RESIDENTE">
+          <Key>
+            <PropertyRef Name="ID_T_R" />
+          </Key>
+          <Property Name="ID_T_R" Type="number" Nullable="false" Precision="2" />
+          <Property Name="NOMBRE_TIPO_RESIDENTE" Type="varchar2" Nullable="false" MaxLength="50" />
+          <Property Name="CARGO_JUNTA_VECINOS" Type="varchar2" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="VIVIENDA">
+          <Key>
+            <PropertyRef Name="DIRECCION_CASA" />
+          </Key>
+          <Property Name="DIRECCION_CASA" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="NUMERO_DE_RESIDENTES" Type="number" Nullable="false" Precision="2" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="varchar2" MaxLength="15" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="number" Nullable="false" Precision="5" />
+        </EntityType>
+        <Association Name="ADMINISTRACION_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+          <End Role="ADMINISTRACION_CONTABLE" Type="Model.Store.ADMINISTRACION_CONTABLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="ADMINISTRACION_CONTABLE">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_COMUNA_FK">
+          <End Role="COMUNA" Type="Model.Store.COMUNA" Multiplicity="0..1" />
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="COMUNA">
+              <PropertyRef Name="ID_COMUNA" />
+            </Principal>
+            <Dependent Role="CONDOMINIO">
+              <PropertyRef Name="COMUNA_ID_COMUNA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_ID_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+          <End Role="ANUNCIO_COMUNIDAD" Type="Model.Store.ANUNCIO_COMUNIDAD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="ANUNCIO_COMUNIDAD">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_ID_FK">
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+          <End Role="REPORTES" Type="Model.Store.REPORTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="REPORTES">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DETALLE_RESERVA_RESERVA_FK">
+          <End Role="RESERVA" Type="Model.Store.RESERVA" Multiplicity="1" />
+          <End Role="DETALLE_RESERVA" Type="Model.Store.DETALLE_RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESERVA">
+              <PropertyRef Name="ID_RESERVA" />
+            </Principal>
+            <Dependent Role="DETALLE_RESERVA">
+              <PropertyRef Name="RESERVA_ID_RESERVA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DETALLE_RESERVA_SERVICIO_FK">
+          <End Role="SERVICIO" Type="Model.Store.SERVICIO" Multiplicity="1" />
+          <End Role="DETALLE_RESERVA" Type="Model.Store.DETALLE_RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICIO">
+              <PropertyRef Name="ID_SERVICIO" />
+            </Principal>
+            <Dependent Role="DETALLE_RESERVA">
+              <PropertyRef Name="SERVICIO_ID_SERVICIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FUNCIONARIO_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+          <End Role="FUNCIONARIO" Type="Model.Store.FUNCIONARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="FUNCIONARIO">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MULTA_RUT_ID_FK">
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="0..1" />
+          <End Role="MULTA" Type="Model.Store.MULTA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="MULTA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESERVA_FUNCIONARIO_FK">
+          <End Role="FUNCIONARIO" Type="Model.Store.FUNCIONARIO" Multiplicity="0..1" />
+          <End Role="RESERVA" Type="Model.Store.RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FUNCIONARIO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Principal>
+            <Dependent Role="RESERVA">
+              <PropertyRef Name="FUNCIONARIO_RUT_FUNCIONARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESERVA_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="0..1" />
+          <End Role="RESERVA" Type="Model.Store.RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="RESERVA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESIDENTE_RUT_ID_FK">
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="0..1" />
+          <End Role="CUOTA_GASTO_RESIDENTES" Type="Model.Store.CUOTA_GASTO_RESIDENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="CUOTA_GASTO_RESIDENTES">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESIDENTE_TIPO_RESIDENTE_FK">
+          <End Role="TIPO_RESIDENTE" Type="Model.Store.TIPO_RESIDENTE" Multiplicity="0..1" />
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_RESIDENTE">
+              <PropertyRef Name="ID_T_R" />
+            </Principal>
+            <Dependent Role="RESIDENTE">
+              <PropertyRef Name="TIPO_RESIDENTE_ID_T_R" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RUT_FUNCIONARIO_FK">
+          <End Role="FUNCIONARIO" Type="Model.Store.FUNCIONARIO" Multiplicity="1" />
+          <End Role="EVENTO_LIBRO" Type="Model.Store.EVENTO_LIBRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FUNCIONARIO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Principal>
+            <Dependent Role="EVENTO_LIBRO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RUT_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="0..1" />
+          <End Role="PAGO_OFFLINE" Type="Model.Store.PAGO_OFFLINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="PAGO_OFFLINE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TIPO_FUNCIONARIO_FK">
+          <End Role="TIPO_FUNCIONARIO" Type="Model.Store.TIPO_FUNCIONARIO" Multiplicity="0..1" />
+          <End Role="FUNCIONARIO" Type="Model.Store.FUNCIONARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_FUNCIONARIO">
+              <PropertyRef Name="ID_T_F" />
+            </Principal>
+            <Dependent Role="FUNCIONARIO">
+              <PropertyRef Name="TIPO_FUNCIONARIO_ID_T_F" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIVIENDA_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+          <End Role="VIVIENDA" Type="Model.Store.VIVIENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="VIVIENDA">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIVIENDA_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.Store.RESIDENTE" Multiplicity="0..1" />
+          <End Role="VIVIENDA" Type="Model.Store.VIVIENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="VIVIENDA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SP_ACTUALIZAR_CUOTA_G_C" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_BORRAR_CUOTA_GASTO_COMUN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_ANUNCIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="TITULO" Type="varchar2" Mode="In" />
+          <Parameter Name="DETALLE" Type="varchar2" Mode="In" />
+          <Parameter Name="ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_CUOTA_GASTO_COMUN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_DETALLE_RESERVA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SERVICIO_SELECCIONADO" Type="number" Mode="In" />
+          <Parameter Name="REQUERIDO_PARA_TRAMO_1" Type="number" Mode="In" />
+          <Parameter Name="REQUERIDO_PARA_TRAMO_2" Type="number" Mode="In" />
+          <Parameter Name="REQUERIDO_PARA_TRAMO_3" Type="number" Mode="In" />
+          <Parameter Name="FECHASELECCIONADA" Type="varchar2" Mode="In" />
+          <Parameter Name="RUT_RESIDENTE" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_EVENTO_LIBRO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SP_TITULO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_AREA_COMUN" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_RUT_INVOLUCRADO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_RUT_FUNCIONARIO" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_INGRESO_GASTO_COMUN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="TIPO" Type="varchar2" Mode="In" />
+          <Parameter Name="CATEGORIA" Type="varchar2" Mode="In" />
+          <Parameter Name="DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="MONTO" Type="number" Mode="In" />
+          <Parameter Name="ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_REPORTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SP_TIPO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_RUT_REPORTADO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_RESERVA_FUNCIONARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="RUT_RESIDENTE" Type="varchar2" Mode="In" />
+          <Parameter Name="RUT_FUNCIONARIO" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_RESERVA_RESIDENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="RUT_RESIDENTE" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_CREAR_RESIDENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="RUT_RESIDENTE" Type="varchar2" Mode="In" />
+          <Parameter Name="PASS_RESIDENTE" Type="varchar2" Mode="In" />
+          <Parameter Name="NOMBRE_RESIDENTE" Type="varchar2" Mode="In" />
+          <Parameter Name="DIRECCION" Type="varchar2" Mode="In" />
+          <Parameter Name="CORREO" Type="varchar2" Mode="In" />
+          <Parameter Name="ID_TIPO_RESIDENTE" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_DESHABILITAR_RESIDENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="RUTRESIDENTE" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_HABILITAR_RESIDENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="RUTRESIDENTE" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_MODIFICAR_GASTO_COMUN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SP_IDADMINISTRAR" Type="number" Mode="In" />
+          <Parameter Name="SP_TIPO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_CATEGORIA" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_DESCRIPCION" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_MONTO" Type="number" Mode="In" />
+        </Function>
+        <Function Name="SP_PAGO_OFFLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SP_TIPO" Type="varchar2" Mode="In" />
+          <Parameter Name="SP_RUT_RESIDENTE" Type="varchar2" Mode="In" />
+        </Function>
+        <Function Name="SP_REVISAR_MULTAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="CASO14">
+          <Parameter Name="SP_ID_CONDOMINIO" Type="number" Mode="In" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ADMINISTRACION_CONTABLE" EntityType="Model.ADMINISTRACION_CONTABLE" />
+          <EntitySet Name="ANUNCIO_COMUNIDAD" EntityType="Model.ANUNCIO_COMUNIDAD" />
+          <EntitySet Name="COMUNA" EntityType="Model.COMUNA" />
+          <EntitySet Name="CONDOMINIO" EntityType="Model.CONDOMINIO" />
+          <EntitySet Name="CUOTA_GASTO_RESIDENTES" EntityType="Model.CUOTA_GASTO_RESIDENTES" />
+          <EntitySet Name="DETALLE_RESERVA" EntityType="Model.DETALLE_RESERVA" />
+          <EntitySet Name="EVENTO_LIBRO" EntityType="Model.EVENTO_LIBRO" />
+          <EntitySet Name="FUNCIONARIO" EntityType="Model.FUNCIONARIO" />
+          <EntitySet Name="MULTA" EntityType="Model.MULTA" />
+          <EntitySet Name="PAGO_OFFLINE" EntityType="Model.PAGO_OFFLINE" />
+          <EntitySet Name="REPORTES" EntityType="Model.REPORTES" />
+          <EntitySet Name="RESERVA" EntityType="Model.RESERVA" />
+          <EntitySet Name="RESIDENTE" EntityType="Model.RESIDENTE" />
+          <EntitySet Name="SERVICIO" EntityType="Model.SERVICIO" />
+          <EntitySet Name="TARJETA_CREDITO" EntityType="Model.TARJETA_CREDITO" />
+          <EntitySet Name="TIPO_FUNCIONARIO" EntityType="Model.TIPO_FUNCIONARIO" />
+          <EntitySet Name="TIPO_RESIDENTE" EntityType="Model.TIPO_RESIDENTE" />
+          <EntitySet Name="VIVIENDA" EntityType="Model.VIVIENDA" />
+          <AssociationSet Name="ADMINISTRACION_CONDOMINIO_FK" Association="Model.ADMINISTRACION_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="ADMINISTRACION_CONTABLE" EntitySet="ADMINISTRACION_CONTABLE" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_ID_CONDOMINIO_FK" Association="Model.CONDOMINIO_ID_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="ANUNCIO_COMUNIDAD" EntitySet="ANUNCIO_COMUNIDAD" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_COMUNA_FK" Association="Model.CONDOMINIO_COMUNA_FK">
+            <End Role="COMUNA" EntitySet="COMUNA" />
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+          </AssociationSet>
+          <AssociationSet Name="CONDOMINIO_ID_FK" Association="Model.CONDOMINIO_ID_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="REPORTES" EntitySet="REPORTES" />
+          </AssociationSet>
+          <AssociationSet Name="FUNCIONARIO_CONDOMINIO_FK" Association="Model.FUNCIONARIO_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+          </AssociationSet>
+          <AssociationSet Name="VIVIENDA_CONDOMINIO_FK" Association="Model.VIVIENDA_CONDOMINIO_FK">
+            <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+            <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+          </AssociationSet>
+          <AssociationSet Name="RESIDENTE_RUT_ID_FK" Association="Model.RESIDENTE_RUT_ID_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="CUOTA_GASTO_RESIDENTES" EntitySet="CUOTA_GASTO_RESIDENTES" />
+          </AssociationSet>
+          <AssociationSet Name="DETALLE_RESERVA_RESERVA_FK" Association="Model.DETALLE_RESERVA_RESERVA_FK">
+            <End Role="RESERVA" EntitySet="RESERVA" />
+            <End Role="DETALLE_RESERVA" EntitySet="DETALLE_RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="DETALLE_RESERVA_SERVICIO_FK" Association="Model.DETALLE_RESERVA_SERVICIO_FK">
+            <End Role="SERVICIO" EntitySet="SERVICIO" />
+            <End Role="DETALLE_RESERVA" EntitySet="DETALLE_RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="RUT_FUNCIONARIO_FK" Association="Model.RUT_FUNCIONARIO_FK">
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+            <End Role="EVENTO_LIBRO" EntitySet="EVENTO_LIBRO" />
+          </AssociationSet>
+          <AssociationSet Name="RESERVA_FUNCIONARIO_FK" Association="Model.RESERVA_FUNCIONARIO_FK">
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+            <End Role="RESERVA" EntitySet="RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="TIPO_FUNCIONARIO_FK" Association="Model.TIPO_FUNCIONARIO_FK">
+            <End Role="TIPO_FUNCIONARIO" EntitySet="TIPO_FUNCIONARIO" />
+            <End Role="FUNCIONARIO" EntitySet="FUNCIONARIO" />
+          </AssociationSet>
+          <AssociationSet Name="MULTA_RUT_ID_FK" Association="Model.MULTA_RUT_ID_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="MULTA" EntitySet="MULTA" />
+          </AssociationSet>
+          <AssociationSet Name="RUT_RESIDENTE_FK" Association="Model.RUT_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="PAGO_OFFLINE" EntitySet="PAGO_OFFLINE" />
+          </AssociationSet>
+          <AssociationSet Name="RESERVA_RESIDENTE_FK" Association="Model.RESERVA_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="RESERVA" EntitySet="RESERVA" />
+          </AssociationSet>
+          <AssociationSet Name="RESIDENTE_TIPO_RESIDENTE_FK" Association="Model.RESIDENTE_TIPO_RESIDENTE_FK">
+            <End Role="TIPO_RESIDENTE" EntitySet="TIPO_RESIDENTE" />
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+          </AssociationSet>
+          <AssociationSet Name="VIVIENDA_RESIDENTE_FK" Association="Model.VIVIENDA_RESIDENTE_FK">
+            <End Role="RESIDENTE" EntitySet="RESIDENTE" />
+            <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADMINISTRACION_CONTABLE">
+          <Key>
+            <PropertyRef Name="ID_ADMISTRACION" />
+          </Key>
+          <Property Name="ID_ADMISTRACION" Type="Int32" Nullable="false" />
+          <Property Name="FECHA" Type="DateTime" />
+          <Property Name="TIPO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CATEGORIA" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="MONTO" Type="Int32" Nullable="false" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <Property Name="OBSERVACIONES" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.ADMINISTRACION_CONDOMINIO_FK" FromRole="ADMINISTRACION_CONTABLE" ToRole="CONDOMINIO" />
+        </EntityType>
+        <EntityType Name="ANUNCIO_COMUNIDAD">
+          <Key>
+            <PropertyRef Name="ID_ANUNCIO_COMUNIDAD" />
+          </Key>
+          <Property Name="ID_ANUNCIO_COMUNIDAD" Type="Int64" Nullable="false" />
+          <Property Name="TITULO" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="DETALLE" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA" Type="DateTime" Nullable="false" />
+          <Property Name="ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.CONDOMINIO_ID_CONDOMINIO_FK" FromRole="ANUNCIO_COMUNIDAD" ToRole="CONDOMINIO" />
+        </EntityType>
+        <EntityType Name="COMUNA">
+          <Key>
+            <PropertyRef Name="ID_COMUNA" />
+          </Key>
+          <Property Name="ID_COMUNA" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="NOMBRE_COMUNA" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.CONDOMINIO_COMUNA_FK" FromRole="COMUNA" ToRole="CONDOMINIO" />
+        </EntityType>
+        <EntityType Name="CONDOMINIO">
+          <Key>
+            <PropertyRef Name="ID_CONDOMINIO" />
+          </Key>
+          <Property Name="ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <Property Name="NOMBRE_CONDOMINIO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CUENTA_CORRIENTE_CONDOMINIO" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CANTIDAD_CASAS" Type="Int16" Nullable="false" />
+          <Property Name="COMUNA_ID_COMUNA" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ADMINISTRACION_CONTABLE" Relationship="Model.ADMINISTRACION_CONDOMINIO_FK" FromRole="CONDOMINIO" ToRole="ADMINISTRACION_CONTABLE" />
+          <NavigationProperty Name="ANUNCIO_COMUNIDAD" Relationship="Model.CONDOMINIO_ID_CONDOMINIO_FK" FromRole="CONDOMINIO" ToRole="ANUNCIO_COMUNIDAD" />
+          <NavigationProperty Name="COMUNA" Relationship="Model.CONDOMINIO_COMUNA_FK" FromRole="CONDOMINIO" ToRole="COMUNA" />
+          <NavigationProperty Name="REPORTES" Relationship="Model.CONDOMINIO_ID_FK" FromRole="CONDOMINIO" ToRole="REPORTES" />
+          <NavigationProperty Name="FUNCIONARIO" Relationship="Model.FUNCIONARIO_CONDOMINIO_FK" FromRole="CONDOMINIO" ToRole="FUNCIONARIO" />
+          <NavigationProperty Name="VIVIENDA" Relationship="Model.VIVIENDA_CONDOMINIO_FK" FromRole="CONDOMINIO" ToRole="VIVIENDA" />
+        </EntityType>
+        <EntityType Name="CUOTA_GASTO_RESIDENTES">
+          <Key>
+            <PropertyRef Name="ID_CUOTA_GASTO_MENSUAL" />
+          </Key>
+          <Property Name="ID_CUOTA_GASTO_MENSUAL" Type="Int32" Nullable="false" />
+          <Property Name="FECHA_INICIO_PAGO" Type="DateTime" />
+          <Property Name="FECHA_TERMINO_PAGO" Type="DateTime" />
+          <Property Name="FECHA_PAGO_RESIDENTE" Type="DateTime" />
+          <Property Name="MONTO" Type="Int32" Nullable="false" />
+          <Property Name="ESTADO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.RESIDENTE_RUT_ID_FK" FromRole="CUOTA_GASTO_RESIDENTES" ToRole="RESIDENTE" />
+        </EntityType>
+        <EntityType Name="DETALLE_RESERVA">
+          <Key>
+            <PropertyRef Name="ID_D_R" />
+            <PropertyRef Name="RESERVA_ID_RESERVA" />
+            <PropertyRef Name="SERVICIO_ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_D_R" Type="Int32" Nullable="false" />
+          <Property Name="ESTADO" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CAP_USADA_TRAMO_1" Type="Int16" Nullable="false" />
+          <Property Name="CAP_USADA_TRAMO_2" Type="Int16" Nullable="false" />
+          <Property Name="CAP_USADA_TRAMO_3" Type="Int16" Nullable="false" />
+          <Property Name="FECHA_ARESERVAR" Type="DateTime" Nullable="false" />
+          <Property Name="COSTO_RESERVA" Type="Int32" Nullable="false" />
+          <Property Name="REPORTE" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="RESERVA_ID_RESERVA" Type="Int64" Nullable="false" />
+          <Property Name="SERVICIO_ID_SERVICIO" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="RESERVA" Relationship="Model.DETALLE_RESERVA_RESERVA_FK" FromRole="DETALLE_RESERVA" ToRole="RESERVA" />
+          <NavigationProperty Name="SERVICIO" Relationship="Model.DETALLE_RESERVA_SERVICIO_FK" FromRole="DETALLE_RESERVA" ToRole="SERVICIO" />
+        </EntityType>
+        <EntityType Name="EVENTO_LIBRO">
+          <Key>
+            <PropertyRef Name="ID_EVENTO_LIBRO" />
+          </Key>
+          <Property Name="ID_EVENTO_LIBRO" Type="Int64" Nullable="false" />
+          <Property Name="TITULO" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="1500" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA" Type="DateTime" Nullable="false" />
+          <Property Name="AREA_COMUN" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="RUT_INVOLUCRADO" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="RUT_FUNCIONARIO" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="FUNCIONARIO" Relationship="Model.RUT_FUNCIONARIO_FK" FromRole="EVENTO_LIBRO" ToRole="FUNCIONARIO" />
+        </EntityType>
+        <EntityType Name="FUNCIONARIO">
+          <Key>
+            <PropertyRef Name="RUT_FUNCIONARIO" />
+          </Key>
+          <Property Name="RUT_FUNCIONARIO" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="PASS_FUNCIONARIO" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="NIVEL_ACCESO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NOMBRE_FUNCIONARIO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TIPO_FUNCIONARIO_ID_T_F" Type="Int32" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.FUNCIONARIO_CONDOMINIO_FK" FromRole="FUNCIONARIO" ToRole="CONDOMINIO" />
+          <NavigationProperty Name="EVENTO_LIBRO" Relationship="Model.RUT_FUNCIONARIO_FK" FromRole="FUNCIONARIO" ToRole="EVENTO_LIBRO" />
+          <NavigationProperty Name="RESERVA" Relationship="Model.RESERVA_FUNCIONARIO_FK" FromRole="FUNCIONARIO" ToRole="RESERVA" />
+          <NavigationProperty Name="TIPO_FUNCIONARIO" Relationship="Model.TIPO_FUNCIONARIO_FK" FromRole="FUNCIONARIO" ToRole="TIPO_FUNCIONARIO" />
+        </EntityType>
+        <EntityType Name="MULTA">
+          <Key>
+            <PropertyRef Name="ID_MULTA" />
+          </Key>
+          <Property Name="ID_MULTA" Type="Int32" Nullable="false" />
+          <Property Name="FECHA_CREACION_MULTA" Type="DateTime" />
+          <Property Name="FECHA_PAGO_MULTA" Type="DateTime" />
+          <Property Name="MONTO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="ESTADO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.MULTA_RUT_ID_FK" FromRole="MULTA" ToRole="RESIDENTE" />
+        </EntityType>
+        <EntityType Name="PAGO_OFFLINE">
+          <Key>
+            <PropertyRef Name="ID_PAGO_OFFLINE" />
+          </Key>
+          <Property Name="ID_PAGO_OFFLINE" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_ARCHIVO" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA" Type="DateTime" />
+          <Property Name="TIPO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RUT_RESIDENTE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.RUT_RESIDENTE_FK" FromRole="PAGO_OFFLINE" ToRole="RESIDENTE" />
+        </EntityType>
+        <EntityType Name="REPORTES">
+          <Key>
+            <PropertyRef Name="ID_REPORTES" />
+          </Key>
+          <Property Name="ID_REPORTES" Type="Int32" Nullable="false" />
+          <Property Name="FECHA" Type="DateTime" />
+          <Property Name="TIPO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="RUT_REPORTADO" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.CONDOMINIO_ID_FK" FromRole="REPORTES" ToRole="CONDOMINIO" />
+        </EntityType>
+        <EntityType Name="RESERVA">
+          <Key>
+            <PropertyRef Name="ID_RESERVA" />
+          </Key>
+          <Property Name="ID_RESERVA" Type="Int64" Nullable="false" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="FUNCIONARIO_RUT_FUNCIONARIO" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="DETALLE_RESERVA" Relationship="Model.DETALLE_RESERVA_RESERVA_FK" FromRole="RESERVA" ToRole="DETALLE_RESERVA" />
+          <NavigationProperty Name="FUNCIONARIO" Relationship="Model.RESERVA_FUNCIONARIO_FK" FromRole="RESERVA" ToRole="FUNCIONARIO" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.RESERVA_RESIDENTE_FK" FromRole="RESERVA" ToRole="RESIDENTE" />
+        </EntityType>
+        <EntityType Name="RESIDENTE">
+          <Key>
+            <PropertyRef Name="RUT_RESIDENTE" />
+          </Key>
+          <Property Name="RUT_RESIDENTE" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="PASS_RESIDENTE" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="NOMBRE_RESIDENTE" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NIVEL_ACCESO" Type="Int16" Nullable="false" />
+          <Property Name="DIRECCION" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CORREO" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TIPO_RESIDENTE_ID_T_R" Type="Int16" />
+          <NavigationProperty Name="CUOTA_GASTO_RESIDENTES" Relationship="Model.RESIDENTE_RUT_ID_FK" FromRole="RESIDENTE" ToRole="CUOTA_GASTO_RESIDENTES" />
+          <NavigationProperty Name="MULTA" Relationship="Model.MULTA_RUT_ID_FK" FromRole="RESIDENTE" ToRole="MULTA" />
+          <NavigationProperty Name="PAGO_OFFLINE" Relationship="Model.RUT_RESIDENTE_FK" FromRole="RESIDENTE" ToRole="PAGO_OFFLINE" />
+          <NavigationProperty Name="RESERVA" Relationship="Model.RESERVA_RESIDENTE_FK" FromRole="RESIDENTE" ToRole="RESERVA" />
+          <NavigationProperty Name="TIPO_RESIDENTE" Relationship="Model.RESIDENTE_TIPO_RESIDENTE_FK" FromRole="RESIDENTE" ToRole="TIPO_RESIDENTE" />
+          <NavigationProperty Name="VIVIENDA" Relationship="Model.VIVIENDA_RESIDENTE_FK" FromRole="RESIDENTE" ToRole="VIVIENDA" />
+        </EntityType>
+        <EntityType Name="SERVICIO">
+          <Key>
+            <PropertyRef Name="ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_SERVICIO" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_SERVICIO" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+          <Property Name="VALOR_TRAMO" Type="Int32" Nullable="false" />
+          <Property Name="CANTIDAD_TOTAL" Type="Int16" Nullable="false" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="DETALLE_RESERVA" Relationship="Model.DETALLE_RESERVA_SERVICIO_FK" FromRole="SERVICIO" ToRole="DETALLE_RESERVA" />
+        </EntityType>
+        <EntityType Name="TARJETA_CREDITO">
+          <Key>
+            <PropertyRef Name="NUMERO_TARJETA" />
+          </Key>
+          <Property Name="NUMERO_TARJETA" Type="Int64" Nullable="false" />
+          <Property Name="COD_SEGURIDAD" Type="Int16" Nullable="false" />
+          <Property Name="FECHA_VENCIMIENTO" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RUT_PERSONA" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="PASS_PERSONA" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="NOMBRE_PERSONA" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SALDO" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TIPO_FUNCIONARIO">
+          <Key>
+            <PropertyRef Name="ID_T_F" />
+          </Key>
+          <Property Name="ID_T_F" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_TIPO_FUNCIONARIO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="FUNCIONARIO" Relationship="Model.TIPO_FUNCIONARIO_FK" FromRole="TIPO_FUNCIONARIO" ToRole="FUNCIONARIO" />
+        </EntityType>
+        <EntityType Name="TIPO_RESIDENTE">
+          <Key>
+            <PropertyRef Name="ID_T_R" />
+          </Key>
+          <Property Name="ID_T_R" Type="Int16" Nullable="false" />
+          <Property Name="NOMBRE_TIPO_RESIDENTE" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CARGO_JUNTA_VECINOS" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.RESIDENTE_TIPO_RESIDENTE_FK" FromRole="TIPO_RESIDENTE" ToRole="RESIDENTE" />
+        </EntityType>
+        <EntityType Name="VIVIENDA">
+          <Key>
+            <PropertyRef Name="DIRECCION_CASA" />
+          </Key>
+          <Property Name="DIRECCION_CASA" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="NUMERO_DE_RESIDENTES" Type="Int16" Nullable="false" />
+          <Property Name="RESIDENTE_RUT_RESIDENTE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="CONDOMINIO_ID_CONDOMINIO" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="CONDOMINIO" Relationship="Model.VIVIENDA_CONDOMINIO_FK" FromRole="VIVIENDA" ToRole="CONDOMINIO" />
+          <NavigationProperty Name="RESIDENTE" Relationship="Model.VIVIENDA_RESIDENTE_FK" FromRole="VIVIENDA" ToRole="RESIDENTE" />
+        </EntityType>
+        <Association Name="ADMINISTRACION_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="1" />
+          <End Role="ADMINISTRACION_CONTABLE" Type="Model.ADMINISTRACION_CONTABLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="ADMINISTRACION_CONTABLE">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_ID_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="1" />
+          <End Role="ANUNCIO_COMUNIDAD" Type="Model.ANUNCIO_COMUNIDAD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="ANUNCIO_COMUNIDAD">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_COMUNA_FK">
+          <End Role="COMUNA" Type="Model.COMUNA" Multiplicity="0..1" />
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="COMUNA">
+              <PropertyRef Name="ID_COMUNA" />
+            </Principal>
+            <Dependent Role="CONDOMINIO">
+              <PropertyRef Name="COMUNA_ID_COMUNA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CONDOMINIO_ID_FK">
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="1" />
+          <End Role="REPORTES" Type="Model.REPORTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="REPORTES">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FUNCIONARIO_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="1" />
+          <End Role="FUNCIONARIO" Type="Model.FUNCIONARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="FUNCIONARIO">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIVIENDA_CONDOMINIO_FK">
+          <End Role="CONDOMINIO" Type="Model.CONDOMINIO" Multiplicity="1" />
+          <End Role="VIVIENDA" Type="Model.VIVIENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CONDOMINIO">
+              <PropertyRef Name="ID_CONDOMINIO" />
+            </Principal>
+            <Dependent Role="VIVIENDA">
+              <PropertyRef Name="CONDOMINIO_ID_CONDOMINIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESIDENTE_RUT_ID_FK">
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="0..1" />
+          <End Role="CUOTA_GASTO_RESIDENTES" Type="Model.CUOTA_GASTO_RESIDENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="CUOTA_GASTO_RESIDENTES">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DETALLE_RESERVA_RESERVA_FK">
+          <End Role="RESERVA" Type="Model.RESERVA" Multiplicity="1" />
+          <End Role="DETALLE_RESERVA" Type="Model.DETALLE_RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESERVA">
+              <PropertyRef Name="ID_RESERVA" />
+            </Principal>
+            <Dependent Role="DETALLE_RESERVA">
+              <PropertyRef Name="RESERVA_ID_RESERVA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DETALLE_RESERVA_SERVICIO_FK">
+          <End Role="SERVICIO" Type="Model.SERVICIO" Multiplicity="1" />
+          <End Role="DETALLE_RESERVA" Type="Model.DETALLE_RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICIO">
+              <PropertyRef Name="ID_SERVICIO" />
+            </Principal>
+            <Dependent Role="DETALLE_RESERVA">
+              <PropertyRef Name="SERVICIO_ID_SERVICIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RUT_FUNCIONARIO_FK">
+          <End Role="FUNCIONARIO" Type="Model.FUNCIONARIO" Multiplicity="1" />
+          <End Role="EVENTO_LIBRO" Type="Model.EVENTO_LIBRO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FUNCIONARIO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Principal>
+            <Dependent Role="EVENTO_LIBRO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESERVA_FUNCIONARIO_FK">
+          <End Role="FUNCIONARIO" Type="Model.FUNCIONARIO" Multiplicity="0..1" />
+          <End Role="RESERVA" Type="Model.RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FUNCIONARIO">
+              <PropertyRef Name="RUT_FUNCIONARIO" />
+            </Principal>
+            <Dependent Role="RESERVA">
+              <PropertyRef Name="FUNCIONARIO_RUT_FUNCIONARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TIPO_FUNCIONARIO_FK">
+          <End Role="TIPO_FUNCIONARIO" Type="Model.TIPO_FUNCIONARIO" Multiplicity="0..1" />
+          <End Role="FUNCIONARIO" Type="Model.FUNCIONARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_FUNCIONARIO">
+              <PropertyRef Name="ID_T_F" />
+            </Principal>
+            <Dependent Role="FUNCIONARIO">
+              <PropertyRef Name="TIPO_FUNCIONARIO_ID_T_F" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MULTA_RUT_ID_FK">
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="0..1" />
+          <End Role="MULTA" Type="Model.MULTA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="MULTA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RUT_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="0..1" />
+          <End Role="PAGO_OFFLINE" Type="Model.PAGO_OFFLINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="PAGO_OFFLINE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESERVA_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="0..1" />
+          <End Role="RESERVA" Type="Model.RESERVA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="RESERVA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RESIDENTE_TIPO_RESIDENTE_FK">
+          <End Role="TIPO_RESIDENTE" Type="Model.TIPO_RESIDENTE" Multiplicity="0..1" />
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_RESIDENTE">
+              <PropertyRef Name="ID_T_R" />
+            </Principal>
+            <Dependent Role="RESIDENTE">
+              <PropertyRef Name="TIPO_RESIDENTE_ID_T_R" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIVIENDA_RESIDENTE_FK">
+          <End Role="RESIDENTE" Type="Model.RESIDENTE" Multiplicity="0..1" />
+          <End Role="VIVIENDA" Type="Model.VIVIENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESIDENTE">
+              <PropertyRef Name="RUT_RESIDENTE" />
+            </Principal>
+            <Dependent Role="VIVIENDA">
+              <PropertyRef Name="RESIDENTE_RUT_RESIDENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="ADMINISTRACION_CONTABLE">
+            <EntityTypeMapping TypeName="Model.ADMINISTRACION_CONTABLE">
+              <MappingFragment StoreEntitySet="ADMINISTRACION_CONTABLE">
+                <ScalarProperty Name="ID_ADMISTRACION" ColumnName="ID_ADMISTRACION" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+                <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+                <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ANUNCIO_COMUNIDAD">
+            <EntityTypeMapping TypeName="Model.ANUNCIO_COMUNIDAD">
+              <MappingFragment StoreEntitySet="ANUNCIO_COMUNIDAD">
+                <ScalarProperty Name="ID_ANUNCIO_COMUNIDAD" ColumnName="ID_ANUNCIO_COMUNIDAD" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="DETALLE" ColumnName="DETALLE" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="ID_CONDOMINIO" ColumnName="ID_CONDOMINIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COMUNA">
+            <EntityTypeMapping TypeName="Model.COMUNA">
+              <MappingFragment StoreEntitySet="COMUNA">
+                <ScalarProperty Name="ID_COMUNA" ColumnName="ID_COMUNA" />
+                <ScalarProperty Name="NOMBRE_COMUNA" ColumnName="NOMBRE_COMUNA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CONDOMINIO">
+            <EntityTypeMapping TypeName="Model.CONDOMINIO">
+              <MappingFragment StoreEntitySet="CONDOMINIO">
+                <ScalarProperty Name="ID_CONDOMINIO" ColumnName="ID_CONDOMINIO" />
+                <ScalarProperty Name="NOMBRE_CONDOMINIO" ColumnName="NOMBRE_CONDOMINIO" />
+                <ScalarProperty Name="CUENTA_CORRIENTE_CONDOMINIO" ColumnName="CUENTA_CORRIENTE_CONDOMINIO" />
+                <ScalarProperty Name="CANTIDAD_CASAS" ColumnName="CANTIDAD_CASAS" />
+                <ScalarProperty Name="COMUNA_ID_COMUNA" ColumnName="COMUNA_ID_COMUNA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CUOTA_GASTO_RESIDENTES">
+            <EntityTypeMapping TypeName="Model.CUOTA_GASTO_RESIDENTES">
+              <MappingFragment StoreEntitySet="CUOTA_GASTO_RESIDENTES">
+                <ScalarProperty Name="ID_CUOTA_GASTO_MENSUAL" ColumnName="ID_CUOTA_GASTO_MENSUAL" />
+                <ScalarProperty Name="FECHA_INICIO_PAGO" ColumnName="FECHA_INICIO_PAGO" />
+                <ScalarProperty Name="FECHA_TERMINO_PAGO" ColumnName="FECHA_TERMINO_PAGO" />
+                <ScalarProperty Name="FECHA_PAGO_RESIDENTE" ColumnName="FECHA_PAGO_RESIDENTE" />
+                <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+                <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DETALLE_RESERVA">
+            <EntityTypeMapping TypeName="Model.DETALLE_RESERVA">
+              <MappingFragment StoreEntitySet="DETALLE_RESERVA">
+                <ScalarProperty Name="ID_D_R" ColumnName="ID_D_R" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+                <ScalarProperty Name="CAP_USADA_TRAMO_1" ColumnName="CAP_USADA_TRAMO_1" />
+                <ScalarProperty Name="CAP_USADA_TRAMO_2" ColumnName="CAP_USADA_TRAMO_2" />
+                <ScalarProperty Name="CAP_USADA_TRAMO_3" ColumnName="CAP_USADA_TRAMO_3" />
+                <ScalarProperty Name="FECHA_ARESERVAR" ColumnName="FECHA_ARESERVAR" />
+                <ScalarProperty Name="COSTO_RESERVA" ColumnName="COSTO_RESERVA" />
+                <ScalarProperty Name="REPORTE" ColumnName="REPORTE" />
+                <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
+                <ScalarProperty Name="SERVICIO_ID_SERVICIO" ColumnName="SERVICIO_ID_SERVICIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EVENTO_LIBRO">
+            <EntityTypeMapping TypeName="Model.EVENTO_LIBRO">
+              <MappingFragment StoreEntitySet="EVENTO_LIBRO">
+                <ScalarProperty Name="ID_EVENTO_LIBRO" ColumnName="ID_EVENTO_LIBRO" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="AREA_COMUN" ColumnName="AREA_COMUN" />
+                <ScalarProperty Name="RUT_INVOLUCRADO" ColumnName="RUT_INVOLUCRADO" />
+                <ScalarProperty Name="RUT_FUNCIONARIO" ColumnName="RUT_FUNCIONARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FUNCIONARIO">
+            <EntityTypeMapping TypeName="Model.FUNCIONARIO">
+              <MappingFragment StoreEntitySet="FUNCIONARIO">
+                <ScalarProperty Name="RUT_FUNCIONARIO" ColumnName="RUT_FUNCIONARIO" />
+                <ScalarProperty Name="PASS_FUNCIONARIO" ColumnName="PASS_FUNCIONARIO" />
+                <ScalarProperty Name="NIVEL_ACCESO" ColumnName="NIVEL_ACCESO" />
+                <ScalarProperty Name="NOMBRE_FUNCIONARIO" ColumnName="NOMBRE_FUNCIONARIO" />
+                <ScalarProperty Name="TIPO_FUNCIONARIO_ID_T_F" ColumnName="TIPO_FUNCIONARIO_ID_T_F" />
+                <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MULTA">
+            <EntityTypeMapping TypeName="Model.MULTA">
+              <MappingFragment StoreEntitySet="MULTA">
+                <ScalarProperty Name="ID_MULTA" ColumnName="ID_MULTA" />
+                <ScalarProperty Name="FECHA_CREACION_MULTA" ColumnName="FECHA_CREACION_MULTA" />
+                <ScalarProperty Name="FECHA_PAGO_MULTA" ColumnName="FECHA_PAGO_MULTA" />
+                <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+                <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAGO_OFFLINE">
+            <EntityTypeMapping TypeName="Model.PAGO_OFFLINE">
+              <MappingFragment StoreEntitySet="PAGO_OFFLINE">
+                <ScalarProperty Name="ID_PAGO_OFFLINE" ColumnName="ID_PAGO_OFFLINE" />
+                <ScalarProperty Name="NOMBRE_ARCHIVO" ColumnName="NOMBRE_ARCHIVO" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="RUT_RESIDENTE" ColumnName="RUT_RESIDENTE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REPORTES">
+            <EntityTypeMapping TypeName="Model.REPORTES">
+              <MappingFragment StoreEntitySet="REPORTES">
+                <ScalarProperty Name="ID_REPORTES" ColumnName="ID_REPORTES" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="RUT_REPORTADO" ColumnName="RUT_REPORTADO" />
+                <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RESERVA">
+            <EntityTypeMapping TypeName="Model.RESERVA">
+              <MappingFragment StoreEntitySet="RESERVA">
+                <ScalarProperty Name="ID_RESERVA" ColumnName="ID_RESERVA" />
+                <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+                <ScalarProperty Name="FUNCIONARIO_RUT_FUNCIONARIO" ColumnName="FUNCIONARIO_RUT_FUNCIONARIO" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RESIDENTE">
+            <EntityTypeMapping TypeName="Model.RESIDENTE">
+              <MappingFragment StoreEntitySet="RESIDENTE">
+                <ScalarProperty Name="RUT_RESIDENTE" ColumnName="RUT_RESIDENTE" />
+                <ScalarProperty Name="PASS_RESIDENTE" ColumnName="PASS_RESIDENTE" />
+                <ScalarProperty Name="NOMBRE_RESIDENTE" ColumnName="NOMBRE_RESIDENTE" />
+                <ScalarProperty Name="NIVEL_ACCESO" ColumnName="NIVEL_ACCESO" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+                <ScalarProperty Name="TIPO_RESIDENTE_ID_T_R" ColumnName="TIPO_RESIDENTE_ID_T_R" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SERVICIO">
+            <EntityTypeMapping TypeName="Model.SERVICIO">
+              <MappingFragment StoreEntitySet="SERVICIO">
+                <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
+                <ScalarProperty Name="NOMBRE_SERVICIO" ColumnName="NOMBRE_SERVICIO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="VALOR_TRAMO" ColumnName="VALOR_TRAMO" />
+                <ScalarProperty Name="CANTIDAD_TOTAL" ColumnName="CANTIDAD_TOTAL" />
+                <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TARJETA_CREDITO">
+            <EntityTypeMapping TypeName="Model.TARJETA_CREDITO">
+              <MappingFragment StoreEntitySet="TARJETA_CREDITO">
+                <ScalarProperty Name="NUMERO_TARJETA" ColumnName="NUMERO_TARJETA" />
+                <ScalarProperty Name="COD_SEGURIDAD" ColumnName="COD_SEGURIDAD" />
+                <ScalarProperty Name="FECHA_VENCIMIENTO" ColumnName="FECHA_VENCIMIENTO" />
+                <ScalarProperty Name="RUT_PERSONA" ColumnName="RUT_PERSONA" />
+                <ScalarProperty Name="PASS_PERSONA" ColumnName="PASS_PERSONA" />
+                <ScalarProperty Name="NOMBRE_PERSONA" ColumnName="NOMBRE_PERSONA" />
+                <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPO_FUNCIONARIO">
+            <EntityTypeMapping TypeName="Model.TIPO_FUNCIONARIO">
+              <MappingFragment StoreEntitySet="TIPO_FUNCIONARIO">
+                <ScalarProperty Name="ID_T_F" ColumnName="ID_T_F" />
+                <ScalarProperty Name="NOMBRE_TIPO_FUNCIONARIO" ColumnName="NOMBRE_TIPO_FUNCIONARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPO_RESIDENTE">
+            <EntityTypeMapping TypeName="Model.TIPO_RESIDENTE">
+              <MappingFragment StoreEntitySet="TIPO_RESIDENTE">
+                <ScalarProperty Name="ID_T_R" ColumnName="ID_T_R" />
+                <ScalarProperty Name="NOMBRE_TIPO_RESIDENTE" ColumnName="NOMBRE_TIPO_RESIDENTE" />
+                <ScalarProperty Name="CARGO_JUNTA_VECINOS" ColumnName="CARGO_JUNTA_VECINOS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIVIENDA">
+            <EntityTypeMapping TypeName="Model.VIVIENDA">
+              <MappingFragment StoreEntitySet="VIVIENDA">
+                <ScalarProperty Name="DIRECCION_CASA" ColumnName="DIRECCION_CASA" />
+                <ScalarProperty Name="NUMERO_DE_RESIDENTES" ColumnName="NUMERO_DE_RESIDENTES" />
+                <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+                <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Model.ADMINISTRACION_CONTABLE" Width="1.5" PointX="8.25" PointY="1" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ANUNCIO_COMUNIDAD" Width="1.5" PointX="21.375" PointY="8" Height="2.1725878906249978" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.COMUNA" Width="1.5" PointX="3.75" PointY="1.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CONDOMINIO" Width="1.5" PointX="6" PointY="1" Height="3.1340950520833335" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CUOTA_GASTO_RESIDENTES" Width="1.5" PointX="5.25" PointY="5.125" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DETALLE_RESERVA" Width="1.5" PointX="10.5" PointY="7.875" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EVENTO_LIBRO" Width="1.5" PointX="17" PointY="7.875" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FUNCIONARIO" Width="1.5" PointX="23.5" PointY="4.125" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MULTA" Width="1.5" PointX="5.25" PointY="8.375" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PAGO_OFFLINE" Width="1.5" PointX="5.25" PointY="11.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.REPORTES" Width="1.5" PointX="14.125" PointY="6.25" Height="2.3648893229166745" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RESERVA" Width="1.5" PointX="8.25" PointY="8.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RESIDENTE" Width="1.5" PointX="3" PointY="7.75" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SERVICIO" Width="1.5" PointX="8.25" PointY="12.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TARJETA_CREDITO" Width="2.375" PointX="0.75" PointY="0.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIPO_FUNCIONARIO" Width="1.5" PointX="17.375" PointY="5.25" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIPO_RESIDENTE" Width="1.5" PointX="0.75" PointY="8.625" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VIVIENDA" Width="1.5" PointX="8.25" PointY="5.375" Height="2.172587890624996" IsExpanded="true" />
+        <AssociationConnector Association="Model.ADMINISTRACION_CONDOMINIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="2.37474609375" />
+          <ConnectorPoint PointX="8.25" PointY="2.37474609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.CONDOMINIO_ID_CONDOMINIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="3.9077521582532042" />
+          <ConnectorPoint PointX="22.125" PointY="3.9077521582532042" />
+          <ConnectorPoint PointX="22.125" PointY="8" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.CONDOMINIO_COMUNA_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="2.547841796875" />
+          <ConnectorPoint PointX="6" PointY="2.547841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.CONDOMINIO_ID_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.3064410576923073" PointY="4.1340950520833335" />
+          <ConnectorPoint PointX="7.3064410576923073" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="8.9166666666666661" PointY="7.778595377604165" />
+          <ConnectorPoint PointX="9.0833333333333339" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="12.166666666666666" PointY="7.778595377604165" />
+          <ConnectorPoint PointX="12.333333333333334" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="14.125" PointY="7.7785953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.FUNCIONARIO_CONDOMINIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="3.8764996582532034" />
+          <ConnectorPoint PointX="24.25" PointY="3.8764996582532034" />
+          <ConnectorPoint PointX="24.25" PointY="4.125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.VIVIENDA_CONDOMINIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="4.06601712900641" />
+          <ConnectorPoint PointX="7.96875" PointY="4.53476712900641" />
+          <ConnectorPoint PointX="7.96875" PointY="6.461293945312498" />
+          <ConnectorPoint PointX="8.25" PointY="6.461293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RESIDENTE_RUT_ID_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="7.75" />
+          <ConnectorPoint PointX="3.75" PointY="6.4035953776041659" />
+          <ConnectorPoint PointX="5.25" PointY="6.4035953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.DETALLE_RESERVA_RESERVA_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="9.5574446614583337" />
+          <ConnectorPoint PointX="10.5" PointY="9.5574446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.DETALLE_RESERVA_SERVICIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="13.557444661458334" />
+          <ConnectorPoint PointX="11.25" PointY="13.557444661458334" />
+          <ConnectorPoint PointX="11.25" PointY="11.201396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RUT_FUNCIONARIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="24.25" PointY="7.0667936197916674" />
+          <ConnectorPoint PointX="24.25" PointY="10.333639322916664" />
+          <ConnectorPoint PointX="18.5" PointY="10.333639322916664" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RESERVA_FUNCIONARIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="23.5" PointY="5.5958968098958337" />
+          <ConnectorPoint PointX="22.208333333333332" PointY="5.5958968098958328" />
+          <ConnectorPoint PointX="22.041666666666668" PointY="5.5958968098958337" />
+          <ConnectorPoint PointX="19.125" PointY="5.5958968098958337" />
+          <ConnectorPoint PointX="19.125" PointY="7.0956835937500031" />
+          <ConnectorPoint PointX="15.875" PointY="7.0956835937500031" />
+          <ConnectorPoint PointX="15.875" PointY="8.8648893229166745" />
+          <ConnectorPoint PointX="12.25" PointY="8.8648893229166745" />
+          <ConnectorPoint PointX="12.25" PointY="7.375" />
+          <ConnectorPoint PointX="10" PointY="7.375" />
+          <ConnectorPoint PointX="10" PointY="7.797587890624996" />
+          <ConnectorPoint PointX="9.3749995000000013" PointY="7.797587890624996" />
+          <ConnectorPoint PointX="9.3749995000000013" PointY="8.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.TIPO_FUNCIONARIO_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="18.875" PointY="6.2832902018229184" />
+          <ConnectorPoint PointX="19.041666666666668" PointY="6.2832902018229175" />
+          <ConnectorPoint PointX="19.208333333333332" PointY="6.2832902018229184" />
+          <ConnectorPoint PointX="22.041666666666668" PointY="6.2832902018229175" />
+          <ConnectorPoint PointX="22.208333333333332" PointY="6.2832902018229184" />
+          <ConnectorPoint PointX="23.5" PointY="6.2832902018229184" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.MULTA_RUT_ID_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="9.6535953776041659" />
+          <ConnectorPoint PointX="5.25" PointY="9.6535953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RUT_RESIDENTE_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="11.268697916666667" />
+          <ConnectorPoint PointX="3.75" PointY="12.8362939453125" />
+          <ConnectorPoint PointX="5.25" PointY="12.8362939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RESERVA_RESIDENTE_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="11.1316943359375" />
+          <ConnectorPoint PointX="9" PointY="11.1316943359375" />
+          <ConnectorPoint PointX="9" PointY="10.739889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.RESIDENTE_TIPO_RESIDENTE_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.5189925130208337" />
+          <ConnectorPoint PointX="3" PointY="9.5189925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="Model.VIVIENDA_RESIDENTE_FK" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="8.67054568880209" />
+          <ConnectorPoint PointX="5" PointY="8.67054568880209" />
+          <ConnectorPoint PointX="5" PointY="8.125" />
+          <ConnectorPoint PointX="9" PointY="8.125" />
+          <ConnectorPoint PointX="9" PointY="7.547587890624996" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

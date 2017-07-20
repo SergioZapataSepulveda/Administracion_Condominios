@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebCaso14_Administrador.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+</head>
+<body>
+    <div id="botonera">
+        <a href="http://localhost:17500/inicio.aspx"><button class="button button1">Inicio</button></a> 
+        <a href="http://localhost:17500/accResidentes.aspx"><button class="button button1">Acceso Residentes</button></a>
+        <a href="http://localhost:17500/accFuncionarios.aspx"><button class="button button1">Acceso Funcionarios</button></a>
+        <a href="http://localhost:17500/contactar.aspx"><button class="button button1">Contacto</button></a> 
+    </div>
+
+    <div id="botones_laterales">
+        <a href="CrearAnuncios.aspx"><button class="buttonL button1L">Crear Anuncios</button></a> <br />
+        <a href="GastosComunes.aspx"><button class="buttonL button1L">Gestionar Gastos comunes</button></a> <br />
+        <a href="GastosComunesResidente.aspx"><button class="buttonL button1L">Pagos Residentes</button></a> <br />
+        <a href="DeshabilitarUsuario.aspx"><button class="buttonL button1L">Deshabilitar un usuario</button></a> <br />
+        <a href="InformacionResidentes.aspx"><button class="buttonL button1L">Información de los residentes</button></a> <br />
+        <a href="GestionarMultas.aspx"><button class="buttonL button1L">Gestionar las Multas</button></a> <br />
+        <a href="ReservarAreasComunes.aspx"><button class="buttonL button1L">Ver y Reservar Áreas Comunes</button></a> <br />
+        <a href="VerUsuariosMorosos.aspx"><button class="buttonL button1L">Ver usuarios morosos</button></a> <br />
+        <a href="IngresarNuevoResidente.aspx"><button class="buttonL button1L">Ingresar a un nuevo residente</button></a> <br />
+        <a href="GenerarReportes.aspx"><button class="buttonL button1L">Generar Reportes</button></a> <br />
+        </div>
+
+
+
+
+
+
+    <form id="form1" runat="server">
+    <br/><br/>
+    <div id="Saludos" align="right">
+    <label id="Label1" style="font-size:14px;">Hola </Label>
+    <b><asp:Label id="lblDato"  runat="server" Text="---"></asp:Label></b><br />
+    <asp:Label id="lblDatoNombreDirectiva" runat="server" Text="----  :::  "></asp:Label>
+    </div>
+    <div id="CerrarSession" align="right">
+    <asp:LoginStatus ID="LoginStatus2" runat="server" onloggingout="LoginStatus1_LoggingOut"/>
+    </div>
+    <br/><br/><br/>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+    </form>
+    <div id="pie" >
+        Todos los Derechos Reservados Sociedad de Condomios S.A. | Oficinas Central Alamenda
+        n° 12354
+    </div>
+</body>
+</html>

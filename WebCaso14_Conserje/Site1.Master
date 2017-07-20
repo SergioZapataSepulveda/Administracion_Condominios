@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebCaso14_Conserje.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+</head>
+<body>
+    <div id="botonera">
+        <a href="http://localhost:17500/inicio.aspx"><button class="button button1">Inicio</button></a> 
+        <a href="http://localhost:17500/accResidentes.aspx"><button class="button button1">Acceso Residentes</button></a>
+        <a href="http://localhost:17500/accFuncionarios.aspx"><button class="button button1">Acceso Funcionarios</button></a>
+        <a href="http://localhost:17500/contactar.aspx"><button class="button button1">Contacto</button></a> 
+    </div>
+
+    <div id="botones_laterales">
+        <a href="DetalleGastosComunes.aspx"><button class="buttonL button1L">Detalle Gastos Comunes</button></a> <br />
+        <a href="InformacionResidente.aspx"><button class="buttonL button1L">Informacion Residente</button></a> <br />
+        <a href="ConsultarPagoGastoComun.aspx"><button class="buttonL button1L">Ver Pagos de Residentes</button></a> <br />
+        <a href="AdjuntarPago.aspx"><button class="buttonL button1L">Adjuntar Pago</button></a> <br />
+        <a href="ConsultarMultas.aspx"><button class="buttonL button1L">Ver Multas de Residentes</button></a> <br />
+        <a href="VerResidentesMorosos.aspx"><button class="buttonL button1L">Ver Residentes Morosos</button></a> <br />
+        <a href="ReservarAreasComunes.aspx"><button class="buttonL button1L">Reservar Areas Comunes</button></a> <br />
+        <a href="IngresarEventoLibro.aspx"><button class="buttonL button1L">Eventos del Libro</button></a> <br />
+        
+        </div>
+
+
+
+
+
+    <form id="form1" runat="server">
+    <br/><br/>
+    <div id="Saludos" align="right">
+    <Label id="Label1" style="font-size:14px;">Hola </Label>
+    <b><asp:Label id="lblDato"  runat="server" Text="---"></asp:Label></b><br />
+    <asp:Label id="lblDatoNombreDirectiva" runat="server" Text="----  :::  "></asp:Label>
+    </div>
+    <div id="CerrarSession" align="right">
+    <asp:LoginStatus ID="LoginStatus2" runat="server" onloggingout="LoginStatus1_LoggingOut"/>
+    </div>
+    <br/><br/><br/>
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+    </form>
+    <div id="pie" >
+        Todos los Derechos Reservados Sociedad de Condomios S.A. | Oficinas Central Alamenda
+        n° 12354
+    </div>
+</body>
+</html>

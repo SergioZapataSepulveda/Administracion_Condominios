@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="ADMINISTRACION_CONTABLE">
+      <EntityTypeMapping TypeName="Model.ADMINISTRACION_CONTABLE">
+        <MappingFragment StoreEntitySet="ADMINISTRACION_CONTABLE">
+          <ScalarProperty Name="ID_ADMISTRACION" ColumnName="ID_ADMISTRACION" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+          <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANUNCIO_COMUNIDAD">
+      <EntityTypeMapping TypeName="Model.ANUNCIO_COMUNIDAD">
+        <MappingFragment StoreEntitySet="ANUNCIO_COMUNIDAD">
+          <ScalarProperty Name="ID_ANUNCIO_COMUNIDAD" ColumnName="ID_ANUNCIO_COMUNIDAD" />
+          <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+          <ScalarProperty Name="DETALLE" ColumnName="DETALLE" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ID_CONDOMINIO" ColumnName="ID_CONDOMINIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMUNA">
+      <EntityTypeMapping TypeName="Model.COMUNA">
+        <MappingFragment StoreEntitySet="COMUNA">
+          <ScalarProperty Name="ID_COMUNA" ColumnName="ID_COMUNA" />
+          <ScalarProperty Name="NOMBRE_COMUNA" ColumnName="NOMBRE_COMUNA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONDOMINIO">
+      <EntityTypeMapping TypeName="Model.CONDOMINIO">
+        <MappingFragment StoreEntitySet="CONDOMINIO">
+          <ScalarProperty Name="ID_CONDOMINIO" ColumnName="ID_CONDOMINIO" />
+          <ScalarProperty Name="NOMBRE_CONDOMINIO" ColumnName="NOMBRE_CONDOMINIO" />
+          <ScalarProperty Name="CUENTA_CORRIENTE_CONDOMINIO" ColumnName="CUENTA_CORRIENTE_CONDOMINIO" />
+          <ScalarProperty Name="CANTIDAD_CASAS" ColumnName="CANTIDAD_CASAS" />
+          <ScalarProperty Name="COMUNA_ID_COMUNA" ColumnName="COMUNA_ID_COMUNA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CUOTA_GASTO_RESIDENTES">
+      <EntityTypeMapping TypeName="Model.CUOTA_GASTO_RESIDENTES">
+        <MappingFragment StoreEntitySet="CUOTA_GASTO_RESIDENTES">
+          <ScalarProperty Name="ID_CUOTA_GASTO_MENSUAL" ColumnName="ID_CUOTA_GASTO_MENSUAL" />
+          <ScalarProperty Name="FECHA_INICIO_PAGO" ColumnName="FECHA_INICIO_PAGO" />
+          <ScalarProperty Name="FECHA_TERMINO_PAGO" ColumnName="FECHA_TERMINO_PAGO" />
+          <ScalarProperty Name="FECHA_PAGO_RESIDENTE" ColumnName="FECHA_PAGO_RESIDENTE" />
+          <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_RESERVA">
+      <EntityTypeMapping TypeName="Model.DETALLE_RESERVA">
+        <MappingFragment StoreEntitySet="DETALLE_RESERVA">
+          <ScalarProperty Name="ID_D_R" ColumnName="ID_D_R" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="CAP_USADA_TRAMO_1" ColumnName="CAP_USADA_TRAMO_1" />
+          <ScalarProperty Name="CAP_USADA_TRAMO_2" ColumnName="CAP_USADA_TRAMO_2" />
+          <ScalarProperty Name="CAP_USADA_TRAMO_3" ColumnName="CAP_USADA_TRAMO_3" />
+          <ScalarProperty Name="FECHA_ARESERVAR" ColumnName="FECHA_ARESERVAR" />
+          <ScalarProperty Name="COSTO_RESERVA" ColumnName="COSTO_RESERVA" />
+          <ScalarProperty Name="REPORTE" ColumnName="REPORTE" />
+          <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
+          <ScalarProperty Name="SERVICIO_ID_SERVICIO" ColumnName="SERVICIO_ID_SERVICIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVENTO_LIBRO">
+      <EntityTypeMapping TypeName="Model.EVENTO_LIBRO">
+        <MappingFragment StoreEntitySet="EVENTO_LIBRO">
+          <ScalarProperty Name="ID_EVENTO_LIBRO" ColumnName="ID_EVENTO_LIBRO" />
+          <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="AREA_COMUN" ColumnName="AREA_COMUN" />
+          <ScalarProperty Name="RUT_INVOLUCRADO" ColumnName="RUT_INVOLUCRADO" />
+          <ScalarProperty Name="RUT_FUNCIONARIO" ColumnName="RUT_FUNCIONARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FUNCIONARIO">
+      <EntityTypeMapping TypeName="Model.FUNCIONARIO">
+        <MappingFragment StoreEntitySet="FUNCIONARIO">
+          <ScalarProperty Name="RUT_FUNCIONARIO" ColumnName="RUT_FUNCIONARIO" />
+          <ScalarProperty Name="PASS_FUNCIONARIO" ColumnName="PASS_FUNCIONARIO" />
+          <ScalarProperty Name="NIVEL_ACCESO" ColumnName="NIVEL_ACCESO" />
+          <ScalarProperty Name="NOMBRE_FUNCIONARIO" ColumnName="NOMBRE_FUNCIONARIO" />
+          <ScalarProperty Name="TIPO_FUNCIONARIO_ID_T_F" ColumnName="TIPO_FUNCIONARIO_ID_T_F" />
+          <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MULTA">
+      <EntityTypeMapping TypeName="Model.MULTA">
+        <MappingFragment StoreEntitySet="MULTA">
+          <ScalarProperty Name="ID_MULTA" ColumnName="ID_MULTA" />
+          <ScalarProperty Name="FECHA_CREACION_MULTA" ColumnName="FECHA_CREACION_MULTA" />
+          <ScalarProperty Name="FECHA_PAGO_MULTA" ColumnName="FECHA_PAGO_MULTA" />
+          <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAGO_OFFLINE">
+      <EntityTypeMapping TypeName="Model.PAGO_OFFLINE">
+        <MappingFragment StoreEntitySet="PAGO_OFFLINE">
+          <ScalarProperty Name="ID_PAGO_OFFLINE" ColumnName="ID_PAGO_OFFLINE" />
+          <ScalarProperty Name="NOMBRE_ARCHIVO" ColumnName="NOMBRE_ARCHIVO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="RUT_RESIDENTE" ColumnName="RUT_RESIDENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPORTES">
+      <EntityTypeMapping TypeName="Model.REPORTES">
+        <MappingFragment StoreEntitySet="REPORTES">
+          <ScalarProperty Name="ID_REPORTES" ColumnName="ID_REPORTES" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="RUT_REPORTADO" ColumnName="RUT_REPORTADO" />
+          <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESERVA">
+      <EntityTypeMapping TypeName="Model.RESERVA">
+        <MappingFragment StoreEntitySet="RESERVA">
+          <ScalarProperty Name="ID_RESERVA" ColumnName="ID_RESERVA" />
+          <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+          <ScalarProperty Name="FUNCIONARIO_RUT_FUNCIONARIO" ColumnName="FUNCIONARIO_RUT_FUNCIONARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESIDENTE">
+      <EntityTypeMapping TypeName="Model.RESIDENTE">
+        <MappingFragment StoreEntitySet="RESIDENTE">
+          <ScalarProperty Name="RUT_RESIDENTE" ColumnName="RUT_RESIDENTE" />
+          <ScalarProperty Name="PASS_RESIDENTE" ColumnName="PASS_RESIDENTE" />
+          <ScalarProperty Name="NOMBRE_RESIDENTE" ColumnName="NOMBRE_RESIDENTE" />
+          <ScalarProperty Name="NIVEL_ACCESO" ColumnName="NIVEL_ACCESO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+          <ScalarProperty Name="TIPO_RESIDENTE_ID_T_R" ColumnName="TIPO_RESIDENTE_ID_T_R" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVICIO">
+      <EntityTypeMapping TypeName="Model.SERVICIO">
+        <MappingFragment StoreEntitySet="SERVICIO">
+          <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
+          <ScalarProperty Name="NOMBRE_SERVICIO" ColumnName="NOMBRE_SERVICIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="VALOR_TRAMO" ColumnName="VALOR_TRAMO" />
+          <ScalarProperty Name="CANTIDAD_TOTAL" ColumnName="CANTIDAD_TOTAL" />
+          <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TARJETA_CREDITO">
+      <EntityTypeMapping TypeName="Model.TARJETA_CREDITO">
+        <MappingFragment StoreEntitySet="TARJETA_CREDITO">
+          <ScalarProperty Name="NUMERO_TARJETA" ColumnName="NUMERO_TARJETA" />
+          <ScalarProperty Name="COD_SEGURIDAD" ColumnName="COD_SEGURIDAD" />
+          <ScalarProperty Name="FECHA_VENCIMIENTO" ColumnName="FECHA_VENCIMIENTO" />
+          <ScalarProperty Name="RUT_PERSONA" ColumnName="RUT_PERSONA" />
+          <ScalarProperty Name="PASS_PERSONA" ColumnName="PASS_PERSONA" />
+          <ScalarProperty Name="NOMBRE_PERSONA" ColumnName="NOMBRE_PERSONA" />
+          <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_FUNCIONARIO">
+      <EntityTypeMapping TypeName="Model.TIPO_FUNCIONARIO">
+        <MappingFragment StoreEntitySet="TIPO_FUNCIONARIO">
+          <ScalarProperty Name="ID_T_F" ColumnName="ID_T_F" />
+          <ScalarProperty Name="NOMBRE_TIPO_FUNCIONARIO" ColumnName="NOMBRE_TIPO_FUNCIONARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_RESIDENTE">
+      <EntityTypeMapping TypeName="Model.TIPO_RESIDENTE">
+        <MappingFragment StoreEntitySet="TIPO_RESIDENTE">
+          <ScalarProperty Name="ID_T_R" ColumnName="ID_T_R" />
+          <ScalarProperty Name="NOMBRE_TIPO_RESIDENTE" ColumnName="NOMBRE_TIPO_RESIDENTE" />
+          <ScalarProperty Name="CARGO_JUNTA_VECINOS" ColumnName="CARGO_JUNTA_VECINOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIVIENDA">
+      <EntityTypeMapping TypeName="Model.VIVIENDA">
+        <MappingFragment StoreEntitySet="VIVIENDA">
+          <ScalarProperty Name="DIRECCION_CASA" ColumnName="DIRECCION_CASA" />
+          <ScalarProperty Name="NUMERO_DE_RESIDENTES" ColumnName="NUMERO_DE_RESIDENTES" />
+          <ScalarProperty Name="RESIDENTE_RUT_RESIDENTE" ColumnName="RESIDENTE_RUT_RESIDENTE" />
+          <ScalarProperty Name="CONDOMINIO_ID_CONDOMINIO" ColumnName="CONDOMINIO_ID_CONDOMINIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

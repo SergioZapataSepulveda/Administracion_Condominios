@@ -1,0 +1,282 @@
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R19\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R19\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R23\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R25\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R30\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R31\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R34\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R36\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R40\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R42\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R43\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R45\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R47\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R48\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R49\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R51\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R53\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R55\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R56\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R60\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R63\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R64\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R67\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R69\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R72\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R73\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R77\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\Caso14.Negocio.dll
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\bin\Debug\Caso14.Negocio.pdb
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\obj\x86\Debug\---- Consola de Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R82\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

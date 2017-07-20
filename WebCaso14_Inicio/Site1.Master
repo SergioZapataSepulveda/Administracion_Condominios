@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebCaso14_Inicio.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+</head>
+<body>
+    <div id="botonera">
+        <a href="inicio.aspx">
+            <button class="button button1">
+                Inicio</button></a> <a href="accResidentes.aspx">
+                    <button class="button button1">
+                        Acceso Residentes</button></a> <a href="accFuncionarios.aspx">
+                            <button class="button button1">
+                                Acceso Funcionarios</button></a> <a href="contactar.aspx">
+                                    <button class="button button1">
+                                        Contacto</button></a>
+    </div>
+    <form id="form1" runat="server">
+            <br/><br/><br/>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+    </form>
+    <div id="pie" >
+        Todos los Derechos Reservados Sociedad de Condomios S.A. | Oficinas Central Alamenda
+        n° 12354
+    </div>
+</body>
+</html>

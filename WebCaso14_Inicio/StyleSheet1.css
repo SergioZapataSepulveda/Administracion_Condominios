@@ -1,0 +1,78 @@
+﻿body
+{
+  background: #466368;
+  background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+  border-radius: 6px;
+  height: 120px;
+
+}
+
+html
+{
+    font-size: 14px;
+    font-family: arial;
+}
+
+#botonera
+{
+    
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #1c7793; 
+    color: White; 
+}
+
+.button1:hover {
+    background-color: #39a2bc;
+    color: white;
+}
+
+
+#pie
+{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #1c7793;
+    text-align: center;
+    color: White;
+    border-top: 15px;
+    padding: 1%;
+}
+
+#Titulos
+{
+    height: 50px;
+    color : White;
+    font-size: 44px;
+    font-family: Arvo;
+    margin-left: 10%;
+    font-weight:700;
+}
+
+#ContentPlaceHolder
+{
+        background-color: White;
+        width : 80%;
+        height: 500px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 150px;
+        
+    }

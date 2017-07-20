@@ -1,0 +1,8 @@
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.dll
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\Caso14.Datos.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Sergio\Desktop\Entrega2_R12\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

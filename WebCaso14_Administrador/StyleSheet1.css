@@ -1,0 +1,277 @@
+﻿body
+{
+    background: #466368;
+    background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+    height: 120px;
+}
+
+html
+{
+    font-size: 14px;
+    font-family: arial;
+}
+
+
+
+#botonera
+{
+}
+.button
+{
+    background-color: #21acce; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    cursor: pointer;
+}
+.ErrorDinamico
+{
+    color: Red; 
+    }
+
+.button1
+{
+    background-color: #1c7793;
+    color: White;
+}
+
+.button1:hover
+{
+    background-color: #39a2bc;
+    color: white;
+}
+
+.buttonL
+{
+    background-color: #57b4c9; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: right;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    cursor: pointer;
+}
+
+
+
+a:link { color: blue } /* unvisited links */
+a:visited { color: purple } /* visited links */
+a:hover { font-weight: bold } /* user hovers */
+a:active { color:  White } /* active links */
+
+.button1L
+{
+    background-color: #57b4c9;
+    color: White;
+}
+
+.button1L:hover
+{
+    background-color: #39a2bc;
+    color: white;
+}
+
+
+.button1L:visited  
+{
+    background-color: #4ec7e5;
+    color: white;
+}
+
+
+
+
+
+.separacion
+{
+    width:15px;
+    }
+
+
+#pie
+{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #1c7793;
+    text-align: center;
+    color: White;
+    border-top: 15px;
+    padding: 1%;
+}
+
+#Titulos
+{
+    height: 50px;
+    color: White;
+    font-size: 44px;
+    font-family: Arvo;
+    margin-left: 20%;
+    font-weight: 700;
+    position: absolute;
+    top: 114px;
+}
+
+#ContentPlaceHolder
+{
+    background-color: White;
+    position: absolute;
+    top: 164px;
+    width: 70%;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+#botones_laterales
+{
+    position: absolute;
+    top: 161px;
+    }
+
+
+#Saludos
+{
+    background: #39a2bc;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: auto;
+    color: White;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    height: 40px;
+    font-family: Roboto Light
+}
+
+
+#CerrarSession
+{
+    background: #39a2bc;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100px;
+    color: White;
+    padding: 5px;
+}
+
+#Label1
+{
+    font-weight: 400;
+}
+
+
+
+
+table 
+{
+    padding-left: 22em;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    
+}
+.TablaLimpia
+    {
+        border: 0px solid #ddd;
+        }
+
+.Titulos2
+{
+    background-color: #E0F0F4;
+    height: 20px;
+}
+h2
+{
+    background-color: #E0F0F4;
+    padding-Top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    }
+
+
+.textoDestacado
+{
+    background-color: #E0F0F4;
+    padding-Top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    }
+    
+    
+ 
+
+.tablaFijada
+{
+    top: 15px; 
+    position: absolute; 
+    max-width: 58%;
+
+    }
+
+
+
+li
+{
+    font-size: 11px;
+    margin-left: 20px;
+    line-height: 20px;
+    }
+
+.Resultado_1
+{
+    color:Blue;}
+
+.Text_Box_Reserva
+{
+    color: Dark-Green;
+    }
+
+#Datos_Dinamicos_Servicios
+{
+    color : Gray;
+    text-align: left;
+    }
+    
+    
+    
+
+.ErrorDinamico2:before  {
+  color:blue ;
+  background-color: #ffffff;
+  opacity: 0.0;
+  
+}
+
+.ErrorDinamico2 {
+  color:Red ;
+  opacity: 1;
+}

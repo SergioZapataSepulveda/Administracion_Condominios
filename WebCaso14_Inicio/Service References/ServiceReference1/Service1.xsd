@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:10741/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarResidente">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarResidenteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NOMBRE_ARCHIVO_PAGO_OFFLINE_2">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NOMBRE_ARCHIVO_PAGO_OFFLINE_2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NOMBRE_ARCHIVO_PAGO_OFFLINE_2Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_PAGO_OFFLINE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUTResidente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_PAGO_OFFLINEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_PAGO_OFFLINEResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LOGpassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidarLoginResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarRut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RutIngresado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarRutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidarRutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ID_desde_LogUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ID_desde_LogUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_desde_LogUserResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Nombre_desde_LogUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Nombre_desde_LogUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Nombre_desde_LogUserResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargoEnDirectiva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargoEnDirectivaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargoEnDirectivaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateResidente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateResidenteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteResidente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteResidenteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Registros_GC_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="seleccionado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="rutBuscar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Registros_GC_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_Registros_GC_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rectificar_Registros_GC_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fechaPago" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monto" type="xs:int" />
+        <xs:element minOccurs="0" name="idCuota" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rectificar_Registros_GC_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rectificar_Registros_GC_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Id_Condominio_desde_rut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="select" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutBuscar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Id_Condominio_desde_rutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Condominio_desde_rutResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Multas_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="select" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="rutBuscar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Multas_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_Multas_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Crear_Multa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="monto" type="xs:int" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutMultar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Crear_MultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Crear_MultaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Met_Ver_Detalle_Reservas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="select" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutResidente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Met_Ver_Detalle_ReservasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Met_Ver_Detalle_ReservasResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modificar_Multa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fechapago" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monto" type="xs:int" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idMulta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modificar_MultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Modificar_MultaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ingresar_Observaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idGastoComun" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ingresar_ObservacionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ingresar_ObservacionesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Anuncios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="lugar" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_AnunciosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_AnunciosResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Residente_Nivel_Acceso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Residente_Nivel_AccesoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Residente_Nivel_AccesoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarAlertasMora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RutIngresado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarAlertasMoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GenerarAlertasMoraResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarAlertasMulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RutIngresado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarAlertasMultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GenerarAlertasMultaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Listar_Pago_Offline">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Listar_Pago_OfflineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Listar_Pago_OfflineResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarReportes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarReportesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarReportesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Listar_Cuota_Gasto_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Listar_Cuota_Gasto_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Listar_Cuota_Gasto_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarMultas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarMultasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarMultasResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarMultasPorResidnte">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarMultasPorResidnteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarMultasPorResidnteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEventoLibro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_Condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEventoLibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarEventoLibroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarIngresoAdministracion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filtroFecha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaMax" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id_Condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarIngresoAdministracionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarIngresoAdministracionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarIngresoAdministracionTodo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_Condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarIngresoAdministracionTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarIngresoAdministracionTodoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Ingreso_Gasto_Comun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_categoria" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_monto" type="xs:int" />
+        <xs:element minOccurs="0" name="_id_condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Ingreso_Gasto_ComunResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Ingreso_Gasto_ComunResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Modificar_Ingreso_Gasto_Comun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_idadministrar" type="xs:int" />
+        <xs:element minOccurs="0" name="_tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_categoria" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_monto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Modificar_Ingreso_Gasto_ComunResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Modificar_Ingreso_Gasto_ComunResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Registros_GC_Mensuales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="seleccionado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="mes" type="xs:int" />
+        <xs:element minOccurs="0" name="anio" type="xs:int" />
+        <xs:element minOccurs="0" name="categoria" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Registros_GC_MensualesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_Registros_GC_MensualesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calcular_Total_Mensual_Registros_GC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+        <xs:element minOccurs="0" name="mes" type="xs:int" />
+        <xs:element minOccurs="0" name="anio" type="xs:int" />
+        <xs:element minOccurs="0" name="entradaSalida" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Calcular_Total_Mensual_Registros_GCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Calcular_Total_Mensual_Registros_GCResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Cuota_Gasto_Comun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id_condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Cuota_Gasto_ComunResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Cuota_Gasto_ComunResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Actualizar_Cuota_G_C">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_id_condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Actualizar_Cuota_G_CResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Actualizar_Cuota_G_CResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Morosos_Totales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="seleccionado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Morosos_TotalesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_Morosos_TotalesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Reportes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RUT_REPORTADO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id_condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_ReportesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_ReportesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Correos_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCondominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar_Correos_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listar_Correos_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Revisar_Multas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Revisar_MultasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Revisar_MultasResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarLoginFuncionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LOGpassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarLoginFuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidarLoginFuncionarioResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ID_desde_LogUser_Funcionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ID_desde_LogUser_FuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_desde_LogUser_FuncionarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Nombre_desde_LogUser_Funcionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Nombre_desde_LogUser_FuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Nombre_desde_LogUser_FuncionarioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargoEnCondominio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargoEnCondominioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargoEnCondominioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id_Condominio_desde_Funcionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LOGusuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id_Condominio_desde_FuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_Condominio_desde_FuncionarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Anuncios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Detalle" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Condominio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_AnunciosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_AnunciosResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Residentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut_Residente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pass_Residente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nombre_Residente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_TIPO_RESIDENTE" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_ResidentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_ResidentesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Deshabilitar_Residente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut_Residente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Deshabilitar_ResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Deshabilitar_ResidenteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Habilitar_Residente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut_Residente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Habilitar_ResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Habilitar_ResidenteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Evento_Libro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SP_Descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SP_Area_Comun" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SP_Rut_Involucrado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SP_Rut_Funcionario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Evento_LibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Evento_LibroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetalleReserva">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetalleReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarDetalleReservaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetalleReservaPorFecha">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_fecha_areservar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetalleReservaPorFechaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarDetalleReservaPorFechaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDetalleReserva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDetalleReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateDetalleReservaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadDetalleReserva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fechaSeleccionada" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadDetalleReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReadDetalleReservaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Detalle_Reserva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idServicio" type="xs:int" />
+        <xs:element minOccurs="0" name="tramo1" type="xs:int" />
+        <xs:element minOccurs="0" name="tramo2" type="xs:int" />
+        <xs:element minOccurs="0" name="tramo3" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaASeleccionar" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RUTResidente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Detalle_ReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Detalle_ReservaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Reserva_Residente_Desde_Funcionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUTResidente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RUT_Funcionario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Reserva_Residente_Desde_FuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Reserva_Residente_Desde_FuncionarioResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Reserva_Residente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUTResidente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_Crear_Reserva_ResidenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SP_Crear_Reserva_ResidenteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsoDeTramoSegunFechayServicio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tramo" type="xs:int" />
+        <xs:element minOccurs="0" name="servicio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsoDeTramoSegunFechayServicioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsoDeTramoSegunFechayServicioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="M_Capacidad_Servicio_porID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Busqueda" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="M_Capacidad_Servicio_porIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="M_Capacidad_Servicio_porIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="M_Precio_Servicio_porID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Busqueda" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="M_Precio_Servicio_porIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="M_Precio_Servicio_porIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContarFilas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContarFilasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContarFilasResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

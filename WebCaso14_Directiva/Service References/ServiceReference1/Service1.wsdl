@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:10741/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:10741/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:10741/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarResidente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarResidente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarResidente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NOMBRE_ARCHIVO_PAGO_OFFLINE_2_InputMessage">
+    <wsdl:part name="parameters" element="tns:NOMBRE_ARCHIVO_PAGO_OFFLINE_2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NOMBRE_ARCHIVO_PAGO_OFFLINE_2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NOMBRE_ARCHIVO_PAGO_OFFLINE_2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_PAGO_OFFLINE_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_PAGO_OFFLINE" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_PAGO_OFFLINE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_PAGO_OFFLINEResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarRut_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarRut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarRut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarRutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ID_desde_LogUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ID_desde_LogUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ID_desde_LogUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ID_desde_LogUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Nombre_desde_LogUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:Nombre_desde_LogUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Nombre_desde_LogUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Nombre_desde_LogUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CargoEnDirectiva_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargoEnDirectiva" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CargoEnDirectiva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargoEnDirectivaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateResidente_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResidente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateResidente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteResidente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResidente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteResidente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Registros_GC_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Registros_GC_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Registros_GC_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Registros_GC_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_rectificar_Registros_GC_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:rectificar_Registros_GC_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_rectificar_Registros_GC_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rectificar_Registros_GC_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Id_Condominio_desde_rut_InputMessage">
+    <wsdl:part name="parameters" element="tns:Id_Condominio_desde_rut" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Id_Condominio_desde_rut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Id_Condominio_desde_rutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Multas_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Multas_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Multas_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Multas_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Crear_Multa_InputMessage">
+    <wsdl:part name="parameters" element="tns:Crear_Multa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Crear_Multa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Crear_MultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Met_Ver_Detalle_Reservas_InputMessage">
+    <wsdl:part name="parameters" element="tns:Met_Ver_Detalle_Reservas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Met_Ver_Detalle_Reservas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Met_Ver_Detalle_ReservasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Modificar_Multa_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modificar_Multa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Modificar_Multa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modificar_MultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Ingresar_Observaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ingresar_Observaciones" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Ingresar_Observaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ingresar_ObservacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Anuncios_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Anuncios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Anuncios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_AnunciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Residente_Nivel_Acceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Residente_Nivel_Acceso" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Residente_Nivel_Acceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Residente_Nivel_AccesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerarAlertasMora_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarAlertasMora" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerarAlertasMora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarAlertasMoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerarAlertasMulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarAlertasMulta" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerarAlertasMulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarAlertasMultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Pago_Offline_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Pago_Offline" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Pago_Offline_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Pago_OfflineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarTarjeta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarTarjeta" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarTarjeta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarTarjetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Met_Pagar_Reservas_InputMessage">
+    <wsdl:part name="parameters" element="tns:Met_Pagar_Reservas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Met_Pagar_Reservas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Met_Pagar_ReservasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Pagos_Residente_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Pagos_Residente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Pagos_Residente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Pagos_ResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarReportes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarReportes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarReportes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarReportesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Cuota_Gasto_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Cuota_Gasto_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Listar_Cuota_Gasto_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_Cuota_Gasto_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarMultas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMultas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarMultas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMultasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarMultasPorResidnte_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMultasPorResidnte" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarMultasPorResidnte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMultasPorResidnteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarEventoLibro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEventoLibro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarEventoLibro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEventoLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarIngresoAdministracion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIngresoAdministracion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarIngresoAdministracion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIngresoAdministracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarIngresoAdministracionTodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIngresoAdministracionTodo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarIngresoAdministracionTodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIngresoAdministracionTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Ingreso_Gasto_Comun_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Ingreso_Gasto_Comun" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Ingreso_Gasto_Comun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Ingreso_Gasto_ComunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Modificar_Ingreso_Gasto_Comun_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Modificar_Ingreso_Gasto_Comun" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Modificar_Ingreso_Gasto_Comun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Modificar_Ingreso_Gasto_ComunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Registros_GC_Mensuales_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Registros_GC_Mensuales" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Registros_GC_Mensuales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Registros_GC_MensualesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Calcular_Total_Mensual_Registros_GC_InputMessage">
+    <wsdl:part name="parameters" element="tns:Calcular_Total_Mensual_Registros_GC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Calcular_Total_Mensual_Registros_GC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Calcular_Total_Mensual_Registros_GCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Cuota_Gasto_Comun_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Cuota_Gasto_Comun" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Cuota_Gasto_Comun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Cuota_Gasto_ComunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Actualizar_Cuota_G_C_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Actualizar_Cuota_G_C" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Actualizar_Cuota_G_C_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Actualizar_Cuota_G_CResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Morosos_Totales_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Morosos_Totales" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Morosos_Totales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Morosos_TotalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reportes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Reportes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reportes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_ReportesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Correos_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Correos_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_Correos_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listar_Correos_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Revisar_Multas_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Revisar_Multas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Revisar_Multas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Revisar_MultasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLoginFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLoginFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ID_desde_LogUser_Funcionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ID_desde_LogUser_Funcionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ID_desde_LogUser_Funcionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ID_desde_LogUser_FuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Nombre_desde_LogUser_Funcionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:Nombre_desde_LogUser_Funcionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Nombre_desde_LogUser_Funcionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Nombre_desde_LogUser_FuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CargoEnCondominio_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargoEnCondominio" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CargoEnCondominio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargoEnCondominioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_id_Condominio_desde_Funcionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:id_Condominio_desde_Funcionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_id_Condominio_desde_Funcionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:id_Condominio_desde_FuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Anuncios_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Anuncios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Anuncios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_AnunciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Residentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Residentes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Residentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_ResidentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Deshabilitar_Residente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Deshabilitar_Residente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Deshabilitar_Residente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Deshabilitar_ResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Habilitar_Residente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Habilitar_Residente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Habilitar_Residente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Habilitar_ResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Evento_Libro_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Evento_Libro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Evento_Libro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Evento_LibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarDetalleReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetalleReserva" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarDetalleReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetalleReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarDetalleReservaPorFecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetalleReservaPorFecha" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListarDetalleReservaPorFecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetalleReservaPorFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDetalleReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDetalleReserva" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDetalleReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDetalleReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReadDetalleReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDetalleReserva" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReadDetalleReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDetalleReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Detalle_Reserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Detalle_Reserva" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Detalle_Reserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Detalle_ReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reserva_Residente_Desde_Funcionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Reserva_Residente_Desde_Funcionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reserva_Residente_Desde_Funcionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Reserva_Residente_Desde_FuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reserva_Residente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Reserva_Residente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Crear_Reserva_Residente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Crear_Reserva_ResidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UsoDeTramoSegunFechayServicio_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsoDeTramoSegunFechayServicio" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UsoDeTramoSegunFechayServicio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsoDeTramoSegunFechayServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_M_Capacidad_Servicio_porID_InputMessage">
+    <wsdl:part name="parameters" element="tns:M_Capacidad_Servicio_porID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_M_Capacidad_Servicio_porID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:M_Capacidad_Servicio_porIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_M_Precio_Servicio_porID_InputMessage">
+    <wsdl:part name="parameters" element="tns:M_Precio_Servicio_porID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_M_Precio_Servicio_porID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:M_Precio_Servicio_porIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContarFilas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContarFilas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContarFilas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContarFilasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Pagar_Reservas_Tarjetas_InputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Pagar_Reservas_Tarjetas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SP_Pagar_Reservas_Tarjetas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SP_Pagar_Reservas_TarjetasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarResidente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarResidente" message="tns:IService1_ListarResidente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarResidenteResponse" message="tns:IService1_ListarResidente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NOMBRE_ARCHIVO_PAGO_OFFLINE_2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NOMBRE_ARCHIVO_PAGO_OFFLINE_2" message="tns:IService1_NOMBRE_ARCHIVO_PAGO_OFFLINE_2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NOMBRE_ARCHIVO_PAGO_OFFLINE_2Response" message="tns:IService1_NOMBRE_ARCHIVO_PAGO_OFFLINE_2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_PAGO_OFFLINE">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_PAGO_OFFLINE" message="tns:IService1_SP_PAGO_OFFLINE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_PAGO_OFFLINEResponse" message="tns:IService1_SP_PAGO_OFFLINE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarLogin" message="tns:IService1_ValidarLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarLoginResponse" message="tns:IService1_ValidarLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarRut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarRut" message="tns:IService1_ValidarRut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarRutResponse" message="tns:IService1_ValidarRut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ID_desde_LogUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ID_desde_LogUser" message="tns:IService1_ID_desde_LogUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ID_desde_LogUserResponse" message="tns:IService1_ID_desde_LogUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Nombre_desde_LogUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Nombre_desde_LogUser" message="tns:IService1_Nombre_desde_LogUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Nombre_desde_LogUserResponse" message="tns:IService1_Nombre_desde_LogUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargoEnDirectiva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CargoEnDirectiva" message="tns:IService1_CargoEnDirectiva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CargoEnDirectivaResponse" message="tns:IService1_CargoEnDirectiva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateResidente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateResidente" message="tns:IService1_CreateResidente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateResidenteResponse" message="tns:IService1_CreateResidente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResidente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteResidente" message="tns:IService1_DeleteResidente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteResidenteResponse" message="tns:IService1_DeleteResidente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Registros_GC_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Registros_GC_Residentes" message="tns:IService1_listar_Registros_GC_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_Registros_GC_ResidentesResponse" message="tns:IService1_listar_Registros_GC_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rectificar_Registros_GC_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/rectificar_Registros_GC_Residentes" message="tns:IService1_rectificar_Registros_GC_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/rectificar_Registros_GC_ResidentesResponse" message="tns:IService1_rectificar_Registros_GC_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Id_Condominio_desde_rut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Id_Condominio_desde_rut" message="tns:IService1_Id_Condominio_desde_rut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Id_Condominio_desde_rutResponse" message="tns:IService1_Id_Condominio_desde_rut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Multas_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Multas_Residentes" message="tns:IService1_listar_Multas_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_Multas_ResidentesResponse" message="tns:IService1_listar_Multas_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Crear_Multa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Crear_Multa" message="tns:IService1_Crear_Multa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Crear_MultaResponse" message="tns:IService1_Crear_Multa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Met_Ver_Detalle_Reservas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Met_Ver_Detalle_Reservas" message="tns:IService1_Met_Ver_Detalle_Reservas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Met_Ver_Detalle_ReservasResponse" message="tns:IService1_Met_Ver_Detalle_Reservas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modificar_Multa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Modificar_Multa" message="tns:IService1_Modificar_Multa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Modificar_MultaResponse" message="tns:IService1_Modificar_Multa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ingresar_Observaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Ingresar_Observaciones" message="tns:IService1_Ingresar_Observaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Ingresar_ObservacionesResponse" message="tns:IService1_Ingresar_Observaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Anuncios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Anuncios" message="tns:IService1_listar_Anuncios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_AnunciosResponse" message="tns:IService1_listar_Anuncios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Residente_Nivel_Acceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Residente_Nivel_Acceso" message="tns:IService1_Residente_Nivel_Acceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Residente_Nivel_AccesoResponse" message="tns:IService1_Residente_Nivel_Acceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarAlertasMora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GenerarAlertasMora" message="tns:IService1_GenerarAlertasMora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GenerarAlertasMoraResponse" message="tns:IService1_GenerarAlertasMora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarAlertasMulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GenerarAlertasMulta" message="tns:IService1_GenerarAlertasMulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GenerarAlertasMultaResponse" message="tns:IService1_GenerarAlertasMulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Pago_Offline">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Listar_Pago_Offline" message="tns:IService1_Listar_Pago_Offline_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Listar_Pago_OfflineResponse" message="tns:IService1_Listar_Pago_Offline_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarTarjeta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarTarjeta" message="tns:IService1_ValidarTarjeta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarTarjetaResponse" message="tns:IService1_ValidarTarjeta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Met_Pagar_Reservas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Met_Pagar_Reservas" message="tns:IService1_Met_Pagar_Reservas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Met_Pagar_ReservasResponse" message="tns:IService1_Met_Pagar_Reservas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Pagos_Residente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Listar_Pagos_Residente" message="tns:IService1_Listar_Pagos_Residente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Listar_Pagos_ResidenteResponse" message="tns:IService1_Listar_Pagos_Residente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarReportes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarReportes" message="tns:IService1_ListarReportes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarReportesResponse" message="tns:IService1_ListarReportes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Cuota_Gasto_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Listar_Cuota_Gasto_Residentes" message="tns:IService1_Listar_Cuota_Gasto_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Listar_Cuota_Gasto_ResidentesResponse" message="tns:IService1_Listar_Cuota_Gasto_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMultas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarMultas" message="tns:IService1_ListarMultas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarMultasResponse" message="tns:IService1_ListarMultas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMultasPorResidnte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarMultasPorResidnte" message="tns:IService1_ListarMultasPorResidnte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarMultasPorResidnteResponse" message="tns:IService1_ListarMultasPorResidnte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarEventoLibro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarEventoLibro" message="tns:IService1_ListarEventoLibro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarEventoLibroResponse" message="tns:IService1_ListarEventoLibro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarIngresoAdministracion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarIngresoAdministracion" message="tns:IService1_ListarIngresoAdministracion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarIngresoAdministracionResponse" message="tns:IService1_ListarIngresoAdministracion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarIngresoAdministracionTodo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarIngresoAdministracionTodo" message="tns:IService1_ListarIngresoAdministracionTodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarIngresoAdministracionTodoResponse" message="tns:IService1_ListarIngresoAdministracionTodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Ingreso_Gasto_Comun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Ingreso_Gasto_Comun" message="tns:IService1_SP_Crear_Ingreso_Gasto_Comun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Ingreso_Gasto_ComunResponse" message="tns:IService1_SP_Crear_Ingreso_Gasto_Comun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Modificar_Ingreso_Gasto_Comun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Modificar_Ingreso_Gasto_Comun" message="tns:IService1_SP_Modificar_Ingreso_Gasto_Comun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Modificar_Ingreso_Gasto_ComunResponse" message="tns:IService1_SP_Modificar_Ingreso_Gasto_Comun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Registros_GC_Mensuales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Registros_GC_Mensuales" message="tns:IService1_listar_Registros_GC_Mensuales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_Registros_GC_MensualesResponse" message="tns:IService1_listar_Registros_GC_Mensuales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Calcular_Total_Mensual_Registros_GC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Calcular_Total_Mensual_Registros_GC" message="tns:IService1_Calcular_Total_Mensual_Registros_GC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Calcular_Total_Mensual_Registros_GCResponse" message="tns:IService1_Calcular_Total_Mensual_Registros_GC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Cuota_Gasto_Comun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Cuota_Gasto_Comun" message="tns:IService1_SP_Crear_Cuota_Gasto_Comun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Cuota_Gasto_ComunResponse" message="tns:IService1_SP_Crear_Cuota_Gasto_Comun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Actualizar_Cuota_G_C">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Actualizar_Cuota_G_C" message="tns:IService1_SP_Actualizar_Cuota_G_C_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Actualizar_Cuota_G_CResponse" message="tns:IService1_SP_Actualizar_Cuota_G_C_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Morosos_Totales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Morosos_Totales" message="tns:IService1_listar_Morosos_Totales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_Morosos_TotalesResponse" message="tns:IService1_listar_Morosos_Totales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reportes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Reportes" message="tns:IService1_SP_Crear_Reportes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_ReportesResponse" message="tns:IService1_SP_Crear_Reportes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar_Correos_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar_Correos_Residentes" message="tns:IService1_listar_Correos_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listar_Correos_ResidentesResponse" message="tns:IService1_listar_Correos_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Revisar_Multas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Revisar_Multas" message="tns:IService1_SP_Revisar_Multas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Revisar_MultasResponse" message="tns:IService1_SP_Revisar_Multas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLoginFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarLoginFuncionario" message="tns:IService1_ValidarLoginFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarLoginFuncionarioResponse" message="tns:IService1_ValidarLoginFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ID_desde_LogUser_Funcionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ID_desde_LogUser_Funcionario" message="tns:IService1_ID_desde_LogUser_Funcionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ID_desde_LogUser_FuncionarioResponse" message="tns:IService1_ID_desde_LogUser_Funcionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Nombre_desde_LogUser_Funcionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Nombre_desde_LogUser_Funcionario" message="tns:IService1_Nombre_desde_LogUser_Funcionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Nombre_desde_LogUser_FuncionarioResponse" message="tns:IService1_Nombre_desde_LogUser_Funcionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargoEnCondominio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CargoEnCondominio" message="tns:IService1_CargoEnCondominio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CargoEnCondominioResponse" message="tns:IService1_CargoEnCondominio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="id_Condominio_desde_Funcionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/id_Condominio_desde_Funcionario" message="tns:IService1_id_Condominio_desde_Funcionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/id_Condominio_desde_FuncionarioResponse" message="tns:IService1_id_Condominio_desde_Funcionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Anuncios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Anuncios" message="tns:IService1_SP_Crear_Anuncios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_AnunciosResponse" message="tns:IService1_SP_Crear_Anuncios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Residentes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Residentes" message="tns:IService1_SP_Crear_Residentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_ResidentesResponse" message="tns:IService1_SP_Crear_Residentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Deshabilitar_Residente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Deshabilitar_Residente" message="tns:IService1_SP_Deshabilitar_Residente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Deshabilitar_ResidenteResponse" message="tns:IService1_SP_Deshabilitar_Residente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Habilitar_Residente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Habilitar_Residente" message="tns:IService1_SP_Habilitar_Residente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Habilitar_ResidenteResponse" message="tns:IService1_SP_Habilitar_Residente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Evento_Libro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Evento_Libro" message="tns:IService1_SP_Crear_Evento_Libro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Evento_LibroResponse" message="tns:IService1_SP_Crear_Evento_Libro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetalleReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarDetalleReserva" message="tns:IService1_ListarDetalleReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarDetalleReservaResponse" message="tns:IService1_ListarDetalleReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetalleReservaPorFecha">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListarDetalleReservaPorFecha" message="tns:IService1_ListarDetalleReservaPorFecha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListarDetalleReservaPorFechaResponse" message="tns:IService1_ListarDetalleReservaPorFecha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDetalleReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateDetalleReserva" message="tns:IService1_CreateDetalleReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateDetalleReservaResponse" message="tns:IService1_CreateDetalleReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadDetalleReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReadDetalleReserva" message="tns:IService1_ReadDetalleReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReadDetalleReservaResponse" message="tns:IService1_ReadDetalleReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Detalle_Reserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Detalle_Reserva" message="tns:IService1_SP_Crear_Detalle_Reserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Detalle_ReservaResponse" message="tns:IService1_SP_Crear_Detalle_Reserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reserva_Residente_Desde_Funcionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Reserva_Residente_Desde_Funcionario" message="tns:IService1_SP_Crear_Reserva_Residente_Desde_Funcionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Reserva_Residente_Desde_FuncionarioResponse" message="tns:IService1_SP_Crear_Reserva_Residente_Desde_Funcionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reserva_Residente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Crear_Reserva_Residente" message="tns:IService1_SP_Crear_Reserva_Residente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Crear_Reserva_ResidenteResponse" message="tns:IService1_SP_Crear_Reserva_Residente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsoDeTramoSegunFechayServicio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UsoDeTramoSegunFechayServicio" message="tns:IService1_UsoDeTramoSegunFechayServicio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UsoDeTramoSegunFechayServicioResponse" message="tns:IService1_UsoDeTramoSegunFechayServicio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="M_Capacidad_Servicio_porID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/M_Capacidad_Servicio_porID" message="tns:IService1_M_Capacidad_Servicio_porID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/M_Capacidad_Servicio_porIDResponse" message="tns:IService1_M_Capacidad_Servicio_porID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="M_Precio_Servicio_porID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/M_Precio_Servicio_porID" message="tns:IService1_M_Precio_Servicio_porID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/M_Precio_Servicio_porIDResponse" message="tns:IService1_M_Precio_Servicio_porID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarFilas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContarFilas" message="tns:IService1_ContarFilas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContarFilasResponse" message="tns:IService1_ContarFilas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SP_Pagar_Reservas_Tarjetas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SP_Pagar_Reservas_Tarjetas" message="tns:IService1_SP_Pagar_Reservas_Tarjetas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SP_Pagar_Reservas_TarjetasResponse" message="tns:IService1_SP_Pagar_Reservas_Tarjetas_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarResidente">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarResidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NOMBRE_ARCHIVO_PAGO_OFFLINE_2">
+      <soap:operation soapAction="http://tempuri.org/IService1/NOMBRE_ARCHIVO_PAGO_OFFLINE_2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_PAGO_OFFLINE">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_PAGO_OFFLINE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLogin">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarRut">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarRut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ID_desde_LogUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/ID_desde_LogUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Nombre_desde_LogUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/Nombre_desde_LogUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargoEnDirectiva">
+      <soap:operation soapAction="http://tempuri.org/IService1/CargoEnDirectiva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateResidente">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateResidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResidente">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteResidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Registros_GC_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Registros_GC_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rectificar_Registros_GC_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/rectificar_Registros_GC_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Id_Condominio_desde_rut">
+      <soap:operation soapAction="http://tempuri.org/IService1/Id_Condominio_desde_rut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Multas_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Multas_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Crear_Multa">
+      <soap:operation soapAction="http://tempuri.org/IService1/Crear_Multa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Met_Ver_Detalle_Reservas">
+      <soap:operation soapAction="http://tempuri.org/IService1/Met_Ver_Detalle_Reservas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modificar_Multa">
+      <soap:operation soapAction="http://tempuri.org/IService1/Modificar_Multa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ingresar_Observaciones">
+      <soap:operation soapAction="http://tempuri.org/IService1/Ingresar_Observaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Anuncios">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Anuncios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Residente_Nivel_Acceso">
+      <soap:operation soapAction="http://tempuri.org/IService1/Residente_Nivel_Acceso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarAlertasMora">
+      <soap:operation soapAction="http://tempuri.org/IService1/GenerarAlertasMora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarAlertasMulta">
+      <soap:operation soapAction="http://tempuri.org/IService1/GenerarAlertasMulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Pago_Offline">
+      <soap:operation soapAction="http://tempuri.org/IService1/Listar_Pago_Offline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarTarjeta">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarTarjeta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Met_Pagar_Reservas">
+      <soap:operation soapAction="http://tempuri.org/IService1/Met_Pagar_Reservas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Pagos_Residente">
+      <soap:operation soapAction="http://tempuri.org/IService1/Listar_Pagos_Residente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarReportes">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarReportes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_Cuota_Gasto_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/Listar_Cuota_Gasto_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMultas">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarMultas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMultasPorResidnte">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarMultasPorResidnte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarEventoLibro">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarEventoLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarIngresoAdministracion">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarIngresoAdministracion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarIngresoAdministracionTodo">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarIngresoAdministracionTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Ingreso_Gasto_Comun">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Ingreso_Gasto_Comun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Modificar_Ingreso_Gasto_Comun">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Modificar_Ingreso_Gasto_Comun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Registros_GC_Mensuales">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Registros_GC_Mensuales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calcular_Total_Mensual_Registros_GC">
+      <soap:operation soapAction="http://tempuri.org/IService1/Calcular_Total_Mensual_Registros_GC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Cuota_Gasto_Comun">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Cuota_Gasto_Comun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Actualizar_Cuota_G_C">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Actualizar_Cuota_G_C" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Morosos_Totales">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Morosos_Totales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reportes">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Reportes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar_Correos_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar_Correos_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Revisar_Multas">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Revisar_Multas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLoginFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarLoginFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ID_desde_LogUser_Funcionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/ID_desde_LogUser_Funcionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Nombre_desde_LogUser_Funcionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/Nombre_desde_LogUser_Funcionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargoEnCondominio">
+      <soap:operation soapAction="http://tempuri.org/IService1/CargoEnCondominio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_Condominio_desde_Funcionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/id_Condominio_desde_Funcionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Anuncios">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Anuncios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Residentes">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Residentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Deshabilitar_Residente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Deshabilitar_Residente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Habilitar_Residente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Habilitar_Residente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Evento_Libro">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Evento_Libro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetalleReserva">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarDetalleReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetalleReservaPorFecha">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListarDetalleReservaPorFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDetalleReserva">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateDetalleReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDetalleReserva">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReadDetalleReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Detalle_Reserva">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Detalle_Reserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reserva_Residente_Desde_Funcionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Reserva_Residente_Desde_Funcionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Crear_Reserva_Residente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Crear_Reserva_Residente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsoDeTramoSegunFechayServicio">
+      <soap:operation soapAction="http://tempuri.org/IService1/UsoDeTramoSegunFechayServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="M_Capacidad_Servicio_porID">
+      <soap:operation soapAction="http://tempuri.org/IService1/M_Capacidad_Servicio_porID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="M_Precio_Servicio_porID">
+      <soap:operation soapAction="http://tempuri.org/IService1/M_Precio_Servicio_porID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarFilas">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContarFilas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SP_Pagar_Reservas_Tarjetas">
+      <soap:operation soapAction="http://tempuri.org/IService1/SP_Pagar_Reservas_Tarjetas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:10741/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
